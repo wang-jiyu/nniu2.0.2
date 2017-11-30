@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.marginTop150 {
+    margin-top: 150px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.top-box {
+    height: 40px;
+    line-height: 40px;
+    background-color: #cccccc;
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.leftNavLeft {
+    width: 6%;
+    background-color: #000;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contentMain {
+    display: inline-block;
+    vertical-align: top;
+    width: 94%;
+}
+
+.contentIframe {
+    width: 100%;
+}
+
+.leftNavLeft ul li {
+    line-height: 40px;
+}
+
+.leftNavLeft ul li a {
+    color: #ffffff;
+}

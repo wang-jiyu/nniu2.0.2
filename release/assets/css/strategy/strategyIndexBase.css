@@ -1,0 +1,111 @@
+* {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+input, textarea, select, [contenteditable=true], [contenteditable=true] > * {
+    -webkit-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, select {
+    font-family: "Open Sans", "MicroSoft YaHei", "Arial", "HELVETICA";
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+i, label, b {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p, i, h1, h2, h3, h4, h5, h6, em, i {
+    font-weight: normal;
+    font-style: normal
+}
+
+dl, ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a[disabled], [disabled] {
+    color: #999999;
+    cursor: default !important;
+}
+
+::before, ::after {
+    font-family: "iconfont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgba(120, 120, 120, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(120, 120, 120, 0.7);
+}
+
+::-webkit-scrollbar-track {
+    background: #EEEEEE;
+}
+
+::-webkit-scrollbar-corner {
+    background: #EEEEEE;
+}
+
+::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.visibility {
+    visibility: inherit !important;
+}
+
+.full_wrap {
+    width: 100%;
+    height: 100%;
+}
+.mtop20{
+    margin-top:20px;
+}

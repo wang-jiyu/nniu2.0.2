@@ -1,0 +1,92 @@
+/*我的已订阅有策略动态样式开始*/
+.container {
+    float: left;
+}
+
+.container .strategy-box {
+    float: right;
+    width: 350px;
+    height: 360px;
+    background: #fff;
+}
+
+.strategy-box .title {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 21px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #eedfdf;
+}
+
+.strategy-box .strategy-list {
+    box-sizing: border-box;
+    padding: 25px 24px;
+}
+
+.strategy-box .strategy-list li + li {
+    border-top: 1px dashed #eedfdf;
+}
+
+.strategy-box .strategy-list .list-item {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.strategy-list .list-item:hover {
+    background: #f9f9f9;
+}
+
+.strategy-list .list-item .strategy {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.strategy-list .list-item .bank {
+    width: 58px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.strategy-list .list-item span + span {
+    margin-left: 9px;
+}
+
+.strategy-list .list-item span.in {
+    color: #ea1a1a;
+}
+
+.strategy-list .list-item span.out {
+    color: #129206;
+}
+
+/*我的已订阅 有策略动态样式结束*/
+
+/*我的已订阅 没有策略动态样式开始*/
+.notDynamic_img {
+    position: relative;
+    font-size: 20px;
+    color: #D6D6D6;
+    text-align: center;
+    margin: 223px 0 55px 0;
+}
+
+.notDynamic_img::before {
+    content: "";
+    position: absolute;
+    top: -170px;
+    left: 70px;
+    width: 204px;
+    height: 152px;
+    background: url(../../images/strategy/index/no-data-illustration.png) no-repeat;
+}
+
+/*我的已订阅 没有策略动态样式结束*/

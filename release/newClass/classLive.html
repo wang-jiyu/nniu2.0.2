@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="renderer" content="webkit">
+	<title>课堂直播</title>
+    <!-- If you'd like to support IE8 -->
+     <script>
+      (function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = clientWidth / 7.5 + 'px';
+        };
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+    </script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/newClass/taro.base.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/newClass/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/newClass/taro.classLive.css" />
+	 <link href="http://vjs.zencdn.net/5.5.3/video-js.min.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
+</head>
+<body>
+	<div class="main_wrap"></div>
+</body>
+<script type="text/javascript" language="javascript" src="/assets/config.js"></script>
+<script type="text/javascript" language="javascript" src="/assets/scripts/newClass/taro.common.js"></script>
+<script type="text/javascript" language="javascript" src="/assets/scripts/newClass/taro.mobileLive.js"></script>
+</html>

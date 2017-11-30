@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, span,  h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, form, label, input, table, tbody, pre,p,tr, th, td{-webkit-tap-highlight-color:rgba(0,0,0,0);margin: 0;padding: 0;border: 0;outline: 0;font-family:'PingFang-SC-Medium','Microsoft YaHei',Helvetica,STHeiti STXihei; box-sizing: border-box; }
+html{ background: #191b20;}
+// html{ background: #fff;}
+body{font-size: 6.25%;width:100%; background: #191b20;color:#A8A8A8;-webkit-touch-callout:none; -webkit-font-smoothing: antialiased;  -webkit-text-size-adjust: none; text-size-adjust: none;}
+a,a:active,a:focus{text-decoration:none; color: #FFFFFF;}
+// img{ width: 100%; max-width: 100%;}
+ul, ol { list-style: none; }
+i,em{ font-style: normal}
+/*input{-webkit-appearance: none;}*/
+input{ font-size: 0.26rem;}
+input, textarea, keygen, select, button { text-rendering: auto; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block;text-align: start; margin: 0em 0em 0em 0em; vertical-align: middle; }
+.mask{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 10000; background: rgba(0, 0, 0, .3); display: none; z-index: 10000;}
+.posFix{
+	position: fixed;
+}
+.posTop{
+	top: 0;
+}
+.posBottom{
+	bottom: 0;
+}

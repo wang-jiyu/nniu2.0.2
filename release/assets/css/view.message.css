@@ -1,0 +1,192 @@
+.message_box{ width:100%; height:100%;}
+.message_box .message_list{ width:240px; height:100%; padding:10px; position:relative; background:#202427;}
+.message_box .message_list .search_box input{ border:0; background:#2c3237; color:#a4a4a4;}
+.message_list .message_tab_list{ position:absolute; top:46px; right:0; bottom:0; left:0; overflow:auto; padding:0 0 20px;}
+.message_list .message_tab_list li{ width:100%; height:60px; padding:11px 15px; cursor:pointer}
+.message_list .message_tab_list li.selected{ background:#264164;}
+.message_tab_list li .message_tab_header{ float:left; width:40px; height:40px; border-radius:50%; overflow:hidden;}
+.message_tab_list li .message_tab_content{ float:left; margin-left:10px; width:calc(100% - 50px); position:relative;}
+.message_tab_content span{ overflow:hidden; display:block;}
+.message_tab_content span label{ float:left; color:#c0c7ce; line-height:20px;}
+.message_tab_content span em{ float:left; width:40px; height:16px; background:#607d8b; border-radius:2px; font-size:12px; color:#fff; line-height:16px; text-align:center; margin-left:10px; margin-top:2px;}
+.message_tab_content span .unread{ position:absolute; overflow:hidden; border-radius:100%; right:0; width:10px; height:10px; top:5px; cursor:pointer; background:#ff6633;}
+.message_tab_content span time{ float:right; font-size:12px; color:#9b9b9b; line-height:20px;}
+.message_tab_content p{ display:block; width:100%; font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#9b9b9b; line-height:22px;}
+.message_box .message_view{ position:absolute; left:240px; top:0; bottom:0; right:0; background:#f2f2f2; overflow:hidden;}
+.message_box .message_view .message_right_item{ position:absolute; left:0; top:0; right:0; bottom:0; visibility:hidden; overflow:auto;}
+.message_box .message_view .message_right_item .chart_list_box dl{ position:absolute; top:0; right:0; bottom:0; left:0; overflow:auto;}
+.message_box .message_view .message_session_box{ width:100%; height:100%; position:relative;}
+.message_view .segmented{ height:40px; padding:0 20px; border-bottom:1px solid #d1d1d1;}
+.message_view .segmented h3{ line-height:40px; font-size:15px; color:#4a4a4a; float:left;}
+.message_view .segmented .segmented_right{ float:right;}
+.message_view .segmented .segmented_right li{ display:inline-block; line-height:40px; color:#9b9b9b; width:18px; vertical-align:middle;margin-right:5px; cursor:pointer;}
+.message_view .segmented .segmented_right li:hover{ color:#6b6b6b;}
+.message_view .segmented .segmented_right li i{font-family: "iconfont"; font-size:22px;}
+.message_view .message_content_box{ position:absolute; left:0; right:0; top:40px; bottom:0; }
+
+.chart_list_box dl dt{ font-size:12px; color:#9b9b9b; text-align:center; margin-top:22px;}
+.chart_list_box dl .message_remind_box{ overflow:hidden; margin: 22px 0; padding:0 22px 0 62px;}
+.chart_list_box dl .message_remind_box>i{ width:40px; height:40px; position:absolute;
+    top:0; left: 22px; border-radius:50%; overflow:hidden;}
+.chart_list_box dl .message_remind_box>i.remind:before{ content:'\e691'; font-size:22px;}
+.chart_list_box dl .message_remind_box .messages_remind{ margin-left:10px; float:left;}
+.chart_list_box dl .message_remind_box .remind_head{ font-size:13px; height:18px; line-height:18px; float:left; width:100%;}
+.chart_list_box dl .message_remind_box .remind_head a{ float:left; margin-right:10px;}
+.chart_list_box dl .message_remind_box .remind_head time{ color:#9b9b9b; float:left;}
+.chart_list_box dl .message_remind_box .message{ padding: 9px 17px; border-radius: 5px; font-size: 13px; line-height: 18px; background: #e1dfdf; margin-top: 10px; max-width: 500px; float: left;}
+.chart_list_box dl .message_remind_box .message a:first-child{ font-size:15px; line-height:18px; color:#000;}
+.chart_list_box dl .message_remind_box .message .inform_content{ margin-top:12px; overflow:hidden; max-height:70px;}
+.chart_list_box dl .message_remind_box .message .inform_content i{ width:60px; height:60px; float:left;}
+.chart_list_box dl .message_remind_box .message .inform_content p{ float:left; max-width:322px; font-size:12px; color:#4a4a4a; line-height:18px; margin:0 0 0 10px; overflow:hidden;text-overflow:ellipsis;display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; }
+.chart_list_box dl .message_remind_box .message .inform_content span.paper{ width:60px; height:60px; float:left; line-height: 60px; text-align: center; font-size: 20px; color: #fff;}
+.chart_list_box dl .message_remind_box .message .system_content{padding: 8px 0;}
+.chart_list_box dl .message_remind_box .message .system_content img{display: block; width: 100%; cursor: pointer;}
+
+.message_box i.inform{ background:#90caf9; color:#fff; font-size:24px; line-height:40px; text-align:center;}
+.message_box i.inform:before{ content:'\e82d';}
+.message_box i.remind{ background:#f48fb1; color:#fff; font-size:22px; line-height:36px; text-align:center;}
+.message_box i.remind:before{ content:'\e691';}
+.message_box i.expert{ background:#f97774; color:#fff; font-size:28px; line-height:40px; text-align:center;}
+.message_box i.expert:before{ content:'\e603';}
+.message_box i.system{ background:#b79de1; color:#fff; font-size:24px; line-height:42px; text-align:center;}
+.message_box i.system:before{ content:'\e648';}
+.message_box i.helper{ background:#4990e2; color:#fff; font-size:36px; line-height:40px; text-align:center;}
+.message_box i.helper:before{ content:'\e82c';}
+.message_box i.service{ background:#7986cb; color:#fff; font-size:26px; line-height:42px; text-align:center;}
+.message_box i.service:before{ content:'\e6cd';}
+.message_box i.complain{ background:#a1887f; color:#fff; font-size:20px; line-height:40px; text-align:center;}
+.message_box i.complain:before{ content:'\e622';}
+.message_box i.consult{ background:#90caf9; color:#fff; font-size:20px; line-height:40px; text-align:center;}
+.message_box i.consult:before{ content:'\e82d';}
+
+.add_complain .form_table td input,
+.add_complain .form_table td textarea{ width:460px;}
+.add_complain td select{ width:110px;}
+.add_complain td textarea{ height:84px;}
+.add_complain td em{ vertical-align:top; margin-top:14px;}
+.add_complain td input[name="mobile"],
+.add_complain td input[name="email"]{ width:200px;}
+
+.complain_box{ padding:30px 20px;}
+.complain_box .complain_header{ height:80px; padding:10px 0; border-bottom:1px solid #e4e4e4;}
+.complain_box .complain_header .header_left{ float:left; height:100%; vertical-align:top;}
+.complain_box .complain_header .header_left span{ font-size:22px; color:#4a4a4a; line-height:60px; float:left;}
+.complain_box .complain_header .header_left input{ width:139px; height:28px; margin:17px 0 0 20px; font-size:13px; float:left;}
+.complain_box .complain_header .header_right{ float:right; height:100%; line-height:60px; margin-right:10px;}
+.complain_box .complain_header .header_right span:first-child a{ color:#d72f45; cursor:default;}
+.complain_box .complain_header .header_right span:last-child a{ color:#6f8297; cursor:default;}
+.complain_box .grid_box{ margin-top:30px;}
+.complain_box .grid_box td{ font-size:12px; color:#605b5b;}
+.complain_box .grid_box th{ text-align:left; padding:3px 6px;}
+
+.info_data{ width:100%; height:200px; text-align:center; line-height:200px; color:#a4a4a4; font-size:20px; border:1px solid #e4e4e4; border-top:0;}
+
+
+/*-- 持牌投顾 --*/
+.recom_item .item_head{overflow:hidden;}
+.recom_item .item_detail{float:right; width:240px;}
+.recom_item .item_detail a{font-size:20px; color:#000; line-height:20px;}
+.recom_item .item_detail div{margin-top:15px; height:20px; overflow:hidden;}
+.recom_item .item_detail div label{padding:0px 14px; height:20px; background:#e1dfdf; border-radius:2px; font-size:13px; text-align:center; line-height:20px; margin-right:10px;}
+.recom_item .item_detail p{font-size:13px; color:#9b9b9b; margin-top:10px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; height:55px;}
+
+.expert_box{width:792px; background:#f2f2f2; padding:25px 0px 30px 20px;}
+.expert_box h4{color:#000; line-height:20px;}
+.expert_box .recom_list_box{margin-top:25px;}
+.expert_box .recom_list{ overflow:hidden;}
+.expert_box .recom_list li{float:left; width:359px; height:158px; padding:25px 20px 10px; border:1px solid #e1dfdf; background:#fff; border-radius:3px; margin:0px 20px 20px 0px; overflow:hidden;}
+.expert_box .recom_list li .avatar{width:60px; border-radius:50%; height:60px; overflow:hidden;}
+.expert_box .catalog_box{margin-top:15px;}
+.expert_box .letter{width:740px; height:40px; line-height:40px; background:#e1dfdf; text-align:center; border-radius:3px; margin:17px 0px 25px;}
+.expert_box .letter a{font-size:16px; padding:0px 5px; color:#0066cc;}
+.expert_box .letter a.no{ color:#4a4a4a; cursor:default;}
+.expert_box .letter_list li{position:relative; overflow:hidden; margin-bottom:15px;}
+.expert_box .letter_list li a.letter_tip{display:block; float:left; width:50px; text-align:center; font-size:24px; line-height:24px; color:#000; cursor:default;}
+.expert_box .letter_list li .recom_item{display:block; float:left; width:685px; border-bottom:1px solid #e1dfdf;}
+.expert_box .letter_list .recom_item .item_detail{float:left; width:300px; height:94px; margin:0px 48px 20px 0px; overflow:hidden;}
+.expert_box .letter_list .recom_item .item_detail a{font-size:16px; line-height:16px;}
+.expert_box .letter_list .recom_item .item_detail:nth-of-type(2n){margin-right:0;}
+
+
+.message_content_box dl dd .message_item .info_head{ margin-bottom:12px;}
+.message_content_box dl dd .message_item .info_head a.name{color:#112f5e; margin-right:7px;}
+.message_content_box dl dd .message_item .info_head label{width:18px; height:18px; line-height:13px; margin-left:5px;}
+.message_content_box dl dd .message_item .info_head label:before{content:'\e602'; font-size:18px; color:#d0011b;}
+.message_content_box dl dd.owner .message_item .info_head .name{color:#1b5e20;}
+.message_content_box dl dd .operate_box{ position:absolute; right:0; top:0; display:none;}
+.message_content_box dl dd .operate_box a{float:left; font-size:13px; margin-left:10px;}
+.message_content_box dl dd:hover .operate_box{display:block;}
+.message_content_box dl dd .message_item blockquote{line-height:18px; margin-bottom:12px; padding:5px 10px 5px; border-left:4px solid #d1d1d1; word-break:break-all; word-wrap:break-word;}
+.message_content_box dl dd .message_item p{word-break:break-all; word-wrap:break-word;}
+.message_content_box dl dd .message_item .message{ margin-top:10px;}
+.message_content_box .share_file.share_file_pdf{ background:#fff;}
+
+.message_content_box .chart_list_box dl dd.owner .avatar{ right: 0; left: auto; }
+.message_content_box .chart_list_box dl dd.owner .info{ margin: 0 50px 0 0;}
+.message_content_box .chart_list_box dl dd.owner .info .info_head a.name{ float: right; margin-right: 0;}
+.message_content_box .chart_list_box dl dd.owner .info .info_head time{ float: right; margin-right: 7px;}
+.message_content_box .chart_list_box dl dd.owner .info .info_head{ height:18px;}
+
+.message_content_box .chart_list_box dl dd .info:after {content:''; display:table; clear:both;}
+.message_content_box .chart_list_box dl dd .info{ *zoom:1;}
+
+.message_content_box .chart_list_box dl dd .message{float: left; max-width: 412px; background: #e1dfdf; padding: 10px; border-radius: 5px; position: relative;}
+.message_content_box .chart_list_box dl dd .message.execute{max-width: 100%;}
+.message_content_box .chart_list_box dl dd.owner .message{background: #cad9ed; float:right;}
+.message_content_box .chart_list_box dl dd .message:before{position: absolute; content: ''; display: block; border-width: 6px 15px 5px 0; border-color: transparent #e1dfdf; border-style: solid; width: 0; left:-8px; top:3px; transform:rotate(40deg);}
+.message_content_box .chart_list_box dl dd.owner .message:before{left: auto; right: -8px; border-width: 5px 0 6px 15px; border-color: transparent #cad9ed; transform:rotate(-40deg);}
+
+
+.info_complain{ padding:0 20px;}
+.info_complain .info_complain_header{ padding-bottom:20px; position:relative;}
+.info_complain .info_complain_header h3{ font-size:20px;}
+.info_complain .info_complain_header div{ margin-top:6px;}
+.info_complain .info_complain_header div span{ margin-right: 16px; font-size:12px; color:#868486;}
+.info_complain .info_complain_header div span:first-child{ color:#343434; font-size:13px;}
+.info_complain .info_complain_header div span:nth-child(3) a{ color: #d8374b; cursor:default;}
+.info_complain .info_complain_header div span:nth-child(4) a{ color: #586d86; cursor:default;}
+.info_complain .info_complain_header input{ width:90px; height:28px; font-size:14px; margin-top:14px; position: absolute; right:10px; top:-15px;}
+
+.info_complain .chat_content{ position:absolute; top:50px; bottom:0; left:0; right:0; }
+.info_complain .chart_list_box{ width:100%; height:100%; position:relative;}
+.info_complain .chat_list_full_box .chart_list_box dl{ bottom:0;}
+.info_complain .chart_list_box dl{padding:24px 12px; position:absolute; top:0; right:0; bottom:29px !important; left:0; overflow:auto;  border-top:1px solid #d1d1d1;}
+.info_complain .chat_content_full dl{ bottom:0 !important;}
+.chat_content_full .chart_list_box .chart_list_scroll{bottom: 0;}
+.info_complain .chart_list_box .editor{ position:absolute; bottom:0; left:0; width:100%; height:160px;}
+.info_complain .chart_list_box .live_operate{position:absolute; left:0; right:0; text-align:center; bottom:0px; height:132px; border-top:1px solid #ddd; padding-top:50px;}
+.info_complain .chart_list_box .live_operate input{height:32px; padding:0px 35px; font-size:14px; border-radius:2px;}
+.info_complain .chart_list_box .live_operate input:first-child{margin-right:15px;}
+
+.info_complain .chart_list_box dl{ overflow:hidden;}
+.info_complain .chart_list_box dl dt{ font-size:12px; color:#9b9b9b; text-align:center;}
+.info_complain .chart_list_box dl dd{ margin:22px 0; width:100%; overflow:hidden;}
+.info_complain .chart_list_box dl dd.message_right i{ float:right;}
+.info_complain .chart_list_box dl dd>i{ width:40px; height:40px; float:left; border-radius:50%; overflow:hidden;}
+.info_complain .chart_list_box dl dd .message_item{ margin-left:10px; float:left;}
+.info_complain .chart_list_box dl dd.message_right .message_item{ float:right; margin:0 10px 0 0;}
+.info_complain .chart_list_box dl dd .message_item{ margin-left:10px;}
+.info_complain .chart_list_box dl dd .message_item span{ font-size:13px; height:18px; line-height:18px; display:block; width:100%;}
+.info_complain .chart_list_box dl dd .message_item span time{ color:#9b9b9b; float:left;}
+.info_complain .chart_list_box dl dd.message_right .message_item span time{ color:#9b9b9b; float:right;}
+.info_complain .chart_list_box dl dd .message_item span a{ float:left; margin-right:10px;}
+.info_complain .chart_list_box dl dd.message_right .message_item span a{ float:right; margin:0 0 0 10px; color:#38713c;}
+.info_complain .chart_list_box dl dd .message_item .normal_message{ padding:9px 17px; border-radius:5px; font-size:13px; line-height:18px; background:#e1dfdf; margin-top:10px; max-width:500px; float:left; word-wrap: break-word;}
+.info_complain .chart_list_box dl dd.message_right .message_item .normal_message{ background:#cad9ed; float:right;}
+.info_complain .chart_list_box dl dd .message_item .inform_message,
+.info_complain .chart_list_box dl dd .message_item .remind_message{ padding:9px 17px; border-radius:5px; background:#e1dfdf; margin-top:10px;}
+
+/*.info_head i.tag{ padding:0 8px; height:16px; line-height:16px; border-radius:3px; background:#627d8a; color:#d9d7d2; vertical-align:top; margin-left:5px; font-size:12px;}*/
+
+@media screen and (min-width: 1500px) {
+    .expert_box {width:1200px;}
+    .expert_box .letter_list li .recom_item{width:1125px;}
+    .expert_box .letter_list .recom_item .item_detail:nth-of-type(2n){margin-right:48px;}
+    .expert_box .letter_list .recom_item .item_detail:nth-of-type(3n){margin-right:0;}
+    .expert_box .letter{width:1125px;}
+    .expert_box .letter a{margin:0 3px;}
+}
+
+.chart_list_box dl .system_box .remind_head a.name, .chart_list_box dl .system_box .message a{cursor: default;}
+
+.text_limit{background: #ffffff;}

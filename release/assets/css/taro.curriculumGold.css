@@ -1,0 +1,165 @@
+.main{width:1198px;margin: 0 auto;padding:26px 0 0px;background-color: #F2F2F2;position:relative;}
+/*右侧按钮栏*/
+.curr-sidebar{position:absolute;top: 29px;right: -36px;width:36px;height:36px;}
+.curr-sidebar div{width:36px;height:36px;background: #1E2124;font-family: MicrosoftYaHei;font-size: 12px;color: #F2F3F6;text-align: center;cursor: pointer;}
+.curr-sidebar div.curr-refresh{margin:10px 0;line-height: 36px;}
+.curr-sidebar div.curr-statr-video{line-height: 36px;}
+.curr-sidebar div.curr-go-index{padding-top: 0.1rem;}
+.curr-sidebar div.curr-go-index p{width:24px;margin:0 auto;height:32px;}
+/*头部视频和老师介绍区域*/
+/*视频播放按钮*/
+.curr-top{width:1198px;}
+.video-js .vjs-big-play-button{    top: 45%;left: 46%;}
+.curr-top .curr-videobox{float:left; width:869px;height:534px; position: relative;}
+.curr-classroom-name{background: rgba(0,0,0,1);width: 100%;padding: 5px 0;}
+.curr-classroom-live{font-size: 16px;color: #FF5A1C;margin-left:70px;}
+.curr-classroom-name-text{font-family: MicrosoftYaHei;font-size: 16px; color: #FFFFFF;margin-left:40px;}
+.curr-top .curr-teacher-introduction{float:left;width:319px;height:524px;float:right;background-color: #FFFFFF;padding:20px 16px 0;}
+.curr-top .curr-teacher-img{float:left;width:60px;height:60px;border-radius:50%;overflow:hidden;}
+.curr-top .curr-teacher-img img{display:block;width:100%;height:100%;}
+.curr-top .curr-teacter-namebox{float:left;margin-left:17px;}
+.curr-top .curr-teacher-name{ font-family:Tahoma, Arial, 'Microsoft Yahei';font-size: 24px; color: #3C3C3C;width:210px;text-align:left;}
+.curr-top .curr-teacher-tag{width:64px;height:20px;background-color:#FF5A1C;width:64px;height:20px;color:#FFFFFF;border-radius:3px;margin:12px 0 0 5px;text-align:center;}
+.curr-top .curr-certificates{font-family: MicrosoftYaHei; font-size: 12px; color: #999999;padding:8px 0 16px 0;border-bottom: 1px solid #E7E6E7;}
+.curr-top .curr-teacher-info{font-family: MicrosoftYaHei;height:285px;font-size: 14px;color: #3C3C3C;line-height: 22px;width:265px;margin:15px auto 0; word-break: break-all; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 13;-webkit-box-orient: vertical; }
+.curr-top .curr-teacher-sign{margin:45px 0 12px;font-family: MicrosoftYaHei;font-size: 15px;color: #999999; line-height: 18px;}
+.curr-teacher-mark{font-family: MicrosoftYaHei;font-size: 15px;color: #999999;}
+.curr-videobox .video-js{width:869px;height:500px;}
+/*tab栏*/
+.curr-nav{background-color: #FFFFFF;height:52px;line-height:50px;width:1198px;border-bottom:2px solid #F2F2F2;}
+.curr-nav-ul{padding-left:18px;}
+.curr-nav-ul li{float: left;margin-left:24px;font-family: MicrosoftYaHei;font-size: 17px;color: #3C3C3C;height:50px;padding:0 15px;}
+.curr-nav-ul li.checked{color:#FF5A1C;border-bottom:3px solid #FF5A1C;}
+/******************************百宝箱-s*******************************/
+/*金股*/
+.curr-goldshares-box{width: 1265px;}
+.curr-goldshares-list{float:left;/*width:935px;*/width:869px;background-color: #FFFFFF;}
+.curr-goldshares-createbtnbox{height:50px;position:relative;}
+.curr-goldshares-createbtnbox .curr-goldshares-create-btn{position:absolute;top:12px;right:60px;width:90px;height:30px;line-height: 30px;text-align:center; background: linear-gradient(to bottom, #FF9020 0%,#FF521D 100%);border-radius:100px;color:#ffffff;cursor: pointer;}
+.curr-goldshares-item-box{min-height:525px;}
+.curr-goldshares-item{border-top:2px solid #F2F2F2;padding:34px 30px 30px;}
+.curr-goldshares-title{position:relative;width:100%;height:26px;}
+.curr-goldshares-code{font-family: MicrosoftYaHei;font-size: 20px;color: #3C3C3C;}
+.curr-goldshares-time{font-family: MicrosoftYaHei;font-size: 12px;color: #999999;margin-left:30px;}
+.curr-goldshares-edit{font-family: MicrosoftYaHei;font-size: 16px;color: #3C3C3C;position:absolute;right:0;top:0;cursor: pointer;}
+.curr-goldshares-index{margin-top:18px;}
+.curr-goldshares-ul li{margin-right:67px; float:left;width:72px;text-align:center;}
+.curr-goldshares-li-value{margin-bottom:10px;}
+.curr-goldshares-li-value,.curr-goldshares-li-text{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;line-height: 18px;}
+.curr-goldshares-info{font-family: MicrosoftYaHei; font-size: 14px;color: #3C3C3C; line-height: 18px;margin-top:10px;}
+/*新建金股*/
+.curr-goldshares-create{float:left;width:869px;height:575px;background-color: #FFFFFF;padding:30px 0 0 30px;}
+.curr-goldshares-create-tit{font-family: MicrosoftYaHei;font-size: 20px;color: #3C3C3C;margin-bottom:40px;}
+.curr-goldshares-create span{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;}
+.curr-goldshares-create-input{width:160px;height:32px;line-height: 32px;padding-left:20px;font-size: 12px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;margin:0 0px 0 35px;}
+.curr-goldshares-create-code{margin-left:60px;}
+.curr-goldshares-create-tr2{margin:30px 0;}
+.curr-goldshares-create-yuan{margin:0 25px 0 20px;}
+.curr-goldshares-create-line{width:72px;height:1px;background-color: #000000;display: inline-block;position: relative;top: -7px;}
+.curr-goldshares-create-tr4{margin:30px 0 40px;}
+.curr-goldshares-create-tr4 textarea{width:490px;height:80px;vertical-align: text-top;margin-left:35px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;resize:none;padding:10px 20px;}
+.curr-goldshares-create-save{background: #FAFAFA; border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei; font-size: 15px;color: #999999;;width:160px;height:40px;line-height: 40px;cursor:pointer;margin:0 40px 0 110px;}
+.curr-goldshares-create-cancel{background: #FAFAFA; border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei; font-size: 15px;color: #999999;width:160px;height:40px;line-height: 40px;cursor:pointer;}
+/*常见问题*/
+.curr-problem{float:right;width:328px;height:575.3px;margin-left:2px;background-color: #FFFFFF;padding:30px 20px 0;box-sizing: border-box;}
+.curr-problem-header{font-family: MicrosoftYaHei;font-size: 18px;color: #3C3C3C;}
+.curr-problem-tit-what{font-family: MicrosoftYaHei;font-size: 14px;color: #FF5A1C;line-height: 20px;margin:14px 0 8px;}
+.curr-problem-tit-subscribe{font-family: MicrosoftYaHei;font-size: 14px;color: #FF5A1C;line-height: 20px;margin:14px 0 8px;margin-top:20px;}
+.curr-problem-tit-look{font-family: MicrosoftYaHei;font-size: 14px;color: #FF5A1C;line-height: 20px;margin:14px 0 8px;margin-top:40px;}
+.curr-problem-text{font-family: MicrosoftYaHei;font-size: 13px;color: #999999;line-height: 20px;}
+/*风险提示*/
+.curr-risk-warning{border-top:8px solid #F2F2F2;height:120px;background-color: #FFFFFF;width:1265px;}
+.curr-risk-warning-left{float: left;width:150px;font-family: MicrosoftYaHei; font-size: 14px;color: #FF5A1C;text-align: center;padding-top:34px;}
+.curr-risk-warning-center{float: left;width:1px;height:72px;margin-top:28px;background-color: #F2F2F2;margin-right:40px;}
+.curr-risk-warning-right{float:left;width:1035px;}
+.curr-risk-warning-right-text1{margin:24px 0 10px 0;}
+/******************************百宝箱-e*******************************/
+/******************************直播-聊天-s*******************************/
+/*聊天区域*/
+.curr-chatbox{width:1198px;background-color: #FFFFFF;}
+.curr-chat-record{ padding: 30px 20px 30px 20px;height: 695px;overflow: auto;}
+.curr-chat-left{margin-bottom:22px;}
+.curr-chat-left-author{position:relative;}
+.curr-chat-left:hover .curr-chat-left-author-reply{display:block;}
+.curr-chat-left-author-reply{position:absolute;top:12px;right:0;color:#3f73c0;display:none;cursor: pointer;}
+.curr-chat-left .curr-chat-left-author-img{width:43px;height: 43px;border-radius: 50%;vertical-align: middle;}
+.curr-chat-left .curr-chat-left-author-name{margin:0 16px;font-family: PingFangSC-Regular;font-size: 14px;color: #999999;letter-spacing: -0.34px;}
+.curr-chat-left .curr-chat-left-author-ids{background: #FF5A1C;border-radius: 84px;width:40px;height:20px;color: #ffffff;line-height: 20px;text-align: center;display: inline-block;}
+.curr-chat-left .curr-chat-left-content{font-family: MicrosoftYaHei;font-size: 14px;line-height: 25px;color: #3C3C3C;padding:20px 18px 20px 22px; background: #F2F3F6;border-radius: 2px;max-width:756px;margin-left:59px;user-select: text;}
+
+.curr-chat-right{position:relative;margin-bottom:22px;}
+.curr-chat-right-author-name,.curr-chat-right-author-name,.curr-chat-right-author-ids{float:right;}
+.curr-chat-right .curr-chat-right-author-img{width:43px;height: 43px;border-radius: 50%;vertical-align: middle;float:right;}
+.curr-chat-right .curr-chat-right-author-name{margin:0 16px;font-family: PingFangSC-Regular;font-size: 14px;color: #999999;letter-spacing: -0.34px;height: 43px;line-height: 43px;}
+.curr-chat-right .curr-chat-right-author-ids{background: #FF5A1C;border-radius: 84px;width:40px;height:20px;color: #ffffff;line-height: 20px;text-align: center;display: inline-block;margin-left:16px;    margin-top: 12px}
+.curr-chat-right .curr-chat-right-content{font-family: MicrosoftYaHei;font-size: 14px;color: #3C3C3C;line-height: 25px;padding:20px 18px 20px 22px; background: #F2F3F6;border-radius: 2px;max-width:756px;margin-right:59px;float: right;}
+.curr-chat-right-content p,.curr-chat-right-content div,.curr-chat-right-content span,.curr-chat-right-content i{user-select: text;}
+.curr-chat-right-content-Reply{border-top:1px solid #E5E5E5;width:716px;margin-top:20px;padding-top:20px;font-family: MicrosoftYaHei;font-size: 14px;color: #999999;line-height: 18px;}
+.curr-chat-right-content-Reply-code{color:#FF5A1C;text-decoration: underline;}
+.curr-chat-right-contentImg img{width:300px;height: 225px;}
+.curr-chat-right-contentImg{padding:10px;background: #F2F3F6;margin-right:59px;float: right;border-radius: 2px;}
+
+
+/*聊天区域发送框*/
+.curr-chat-send{border-top:10px solid #F2F2F2;width:1198px;background-color: #FFFFFF;margin-bottom: 26px;}
+.curr-chat-send-top{width:100%;height:50px;padding:12px 0 12px 30px;border-bottom:1px solid #F2F2F2;}
+.curr-chat-send-top-face{width:26px;height:26px;display: inline-block;margin-right:40px;cursor: pointer;}
+.curr-chat-send-top-face img{display: block;width:100%;height:100%;}
+.curr-chat-send-top-pic{width:26px;height: 23px;display: inline-block;cursor: pointer;}
+.curr-chat-send-top-pic img{display:block;width:100%;height:100%;}
+.curr-chat-textarea{width:100%;    height:190px;}
+.curr-chat-textarea textarea{width:100%;height:190px;resize: none;border:none;padding:20px 30px;}
+.curr-chat-sendbtn{height:50px;background: #FFFFFF;border-radius: 0 0 2px 2px;border:1px solid #F2F2F2;}
+.curr-chat-setting{background: url("../images/live/liveSetting.png") no-repeat;background-size: 26px 26px;width:70px;cursor:pointer;text-align: center;float:right;background-position: left center;  height: 50px;line-height: 50px;padding-left: 40px;}
+.curr-chat-send-button{float: right;background-image: linear-gradient(-180deg, #FF9320 1%, #FF511D 99%); cursor:pointer;   border-radius: 100px;width: 90px;height: 30px;line-height: 30px;text-align: center;color: #ffffff;margin: 10px 30px 0 52px;}
+
+/*直播设置*/
+.liveChat-settingbg{position: fixed;width:100%;height:100%;background: rgba(0,0,0,0.45);top:0;left:0; z-index: 9999;}
+.liveChat-setting-bombbox{position: fixed;left: 50%;top: 50%;z-index: 9999;background-color: #FFFFFF;padding: 0 0 0 51px;width: 662px;height: 485px;margin-left: -331px;margin-top: -284px;}
+.liveChat-setting-tit{font-family: MicrosoftYaHei-Bold;font-size: 20px;color: #3C3C3C;font-weight:bold;}
+.liveChat-setting-tr1{margin:40px 0 30px 0}
+.liveChat-setting-tr1span{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;margin-right:35px;}
+.liveChat-settin-tr1input{background: #FAFAFA;border: 1px solid #C8C8C8; border-radius: 2px;width:400px;height:32px;padding-left:20px;}
+.liveChat-setting-tr2select{width:400px;height:32px;padding-left:20px;background: #FAFAFA;border: 1px solid #C8C8C8;     -webkit-appearance: menulist-button;}
+.liveChat-setting-tr3{margin:40px 0;}
+.liveChat-setting-tr3 label{margin-right:70px;}
+.liveChat-setting-tr3 label input{vertical-align: middle;    -webkit-appearance: checkbox;    width: 18px;height: 18px;margin-right: 18px;}
+.liveChat-setting-tr3 label input[type=checkbox]:checked::before { content:'';  position: absolute; width: 18px; height: 18px;background: url("../images/live/checkout.png") no-repeat;}
+
+.liveChat-setting-tr4textarea{width:400px;height:190px;resize: none;padding:10px 20px;vertical-align: top;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;}
+.liveChat-setting-button{padding:39px 0 0 111px;}
+.liveChat-setting-button button{background: #FAFAFA;cursor:pointer;border: 1px solid #C8C8C8;border-radius: 2px;width:160px;height:40px;font-family: MicrosoftYaHei;font-size: 15px;color: #999999;}
+.liveChat-setting-button .liveChat-setting-save{margin-right:40px;}
+.liveChat-setting-button .liveChat-setting-save.adopt{color: #3C3C3C;}
+.liveChat-setting-ts{font-family: MicrosoftYaHei;font-size: 14px;color: #999999;padding:40px 0 0 111px;}
+/******************************直播-聊天-e*******************************/
+
+/******************************创建观点-s*******************************/
+.createViews{padding:33px 30px 70px 33px;background: #FFFFFF;width:935px;height:575px;float: left;}
+.createViews-tit{font-family: MicrosoftYaHei;font-size: 20px;color: #3C3C3C;position:relative;}
+.createViews-close{position:absolute;right:0;top:0;color:#9B9B9B;cursor:pointer;}
+.createViews-tr1{margin:40px 0 37px 0;}
+.createViews-tr1 span,.createViews-tr2 span{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;}
+.createViews-tr1input{width:160px;height:32px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei;font-size: 12px;color: #999999;padding:8px 20px;margin-left:35px;}
+.createViews-tr2file{/*margin-left:50px;*/    border: 0;margin-top: 6px;}
+.createViews-tr3{margin-top:43px;}
+.createViews-tr3 textarea{width:750px;height:200px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei;font-size: 12px;color: #3C3C3C;padding:20px;resize:none;vertical-align: top;margin-left:65px;}
+.createViews-button{margin:40px 0 0 110px;}
+
+.createViews-button .createViews-cancel,.createViews-button .createViews-submit{width:160px;cursor:pointer;height:40px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei;font-size: 15px;color: #999999;}
+.createViews-submit{margin-right:40px;}
+.adopt{color: #3C3C3C!important;}
+.field_upload_tr{height: 68px;    line-height: 50px;}
+.filed_upload_files{padding: 4px 10px;height: 30px;margin-top: 10px;line-height: 30px;position: relative;cursor: pointer;color: #3c3c3c;border-radius: 4px;overflow: hidden;display: inline-block;text-decoration: none;}
+.filed_upload_files input.createViews-tr2file{position: absolute;cursor: pointer;/*font-size: 100px;*/left: -77px;width: 164px;top: 0;opacity: 0; filter: alpha(opacity=0);}
+/*原导航栏样式修改*/
+.teacher_nav {height: 48px;width: 100%;background: #ffffff; border-bottom: 2px solid #F2F2F2;}
+
+/*直播聊天区域样式修改-9.29*/
+.message_box{display:inline-block;padding:20px;background: #F2F3F6}
+.chart_list_box dl dd .info p{padding:0;  text-align: left;     user-select: text; }
+.chart_list_box dl dd .info blockquote{border-left:none;background: #F2F3F6;text-align: left;    user-select: text;padding:0;margin:0;padding-top: 13px; border-top: 1px solid #E5E5E5;margin-top: 13px;}
+.chart_list_box dl dd .info .info_head span.identity{margin-left: 4px;margin-right: 11px;}
+.chart_list_box dl dd.teacher .info .info_head a.name{float:right;}
+.chart_list_box dl dd.teacher .info .info_head span.identity{float:right;margin-left:11px;}
+.chart_list_box dl dd.teacher .info .info_head time{height: 22px;line-height: 22px;}

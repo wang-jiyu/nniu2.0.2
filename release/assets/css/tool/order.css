@@ -1,0 +1,138 @@
+.user_order_box{ width:745px; height:100%; overflow:auto; background:#fff; position:relative;}
+.user_order_box .order_progress{ width:100%; height:120px; background:#f2f2f2; padding-top:1px;}
+.order_progress .progress_box{ margin:0 auto; margin-top:40px;}
+.user_order_box .order_item{ padding:32px 30px; border-bottom:1px solid #e1dfdf;}
+.order_item .order_content{ margin:13px 0 0 43px;}
+.order_item .order_content td{ display:inline-block; margin-top:8px;}
+.order_item .pay_box{ overflow:hidden; margin:20px 0 0 20px;}
+.order_item .pay_way{ margin:20px 0 0 20px;}
+
+.user_order_box .order_count{ padding:14px 30px; text-align:right;}
+.order_count table{ display:inline-block;}
+.order_count table .filed{ width:90px; text-align:left;}
+.order_count>div{ margin-top:10px;}
+.order_count>div .checkbox{ margin-right:16px;}
+.order_count>input{ margin-top:16px; width:140px;}
+
+.user_order_box .order_success{ padding:81px; text-align:center;}
+.order_success i{ display:inline-block; width:131px; height:131px; border-radius:50%; background:#f6a623; text-align:center; line-height:131px;}
+.order_success i:before{ content: "\e61f"; font-size:80px; color:#fff;}
+.order_success h2{ color:#4a4a4a; font-size:28px; margin-top:36px;}
+.order_success span{ font-size:16px; color:#9b9b9b; display:inline-block; margin-top:10px;}
+
+.user_order_box .dialog_box .dialog_content{ text-align:center;}
+.user_order_box .dialog_box .dialog_content p{ font-size:14px; color:#555; text-align:left; line-height:26px;}
+.user_order_box .dialog_box .dialog_content input{  margin: 5px 0; height: 40px;  width:100%;}
+.user_order_box .dialog_box .dialog_content .code_box{ margin:0 0 20px 0 }
+.user_order_box .dialog_box .dialog_content .code{ position:relative;}
+.user_order_box .dialog_box .dialog_content .code img {position:absolute;right:3px;top: 7px;width:90px;height: 35px;}
+.user_order_box .dialog_box .tootip{ color:rgb(253, 63, 62); padding:30px 0 15px;}
+.user_order_box .dialog_box .dialog_content input.dark_blue{ margin-left:31px;}
+.user_order_box .dialog_box .tooltip { height:24px; line-height:24px; color:#999;}
+
+
+.user_subscribe_box{ background:#fff; width:745px; overflow:auto; height:100%;}
+.user_subscribe_box .subscribe_content{ padding:48px 40px 20px 40px; }
+
+.offer_company{ display:block; height:32px; background:#f2f2f2; line-height:32px; text-align:center; font-size:12px; color:#4a4a4a;}
+
+.level_vip_box{ padding:20px 32px 66px 32px; width:745px; height:100%; overflow:auto; background:#fff;}
+.level_vip_box h3{ font-size:22px; color:#4a4a4a; margin-bottom:15px;}
+.level_vip_box .grid_box{ border-spacing: 0px; }
+.level_vip_box .grid_box thead tr{ background:#e3e2e2; height:50px; font-size:17px;}
+.level_vip_box .grid_box tbody tr{ height:36px;}
+.level_vip_box .grid_box tbody tr td:first-child{ color:#000;}
+.level_vip_box .grid_box tbody tr td{ color:#888;}
+.level_vip_box .grid_box tbody tr:nth-child(even){ background:#f2f2f2;}
+.level_vip_box .level_vip_submit{ text-align:right; margin-top:30px; padding-right:27px;}
+.level_vip_box .level_vip_submit label{ text-align:left; margin-left:38px;}
+.level_vip_box .level_vip_submit label input{ width:90px;}
+.level_vip_box .level_vip_submit label h5{ font-size:18px; color:#ff3300; margin-top:12px;}
+
+.user_order_box .pay_way_error{ padding:0 30px; text-align:right; color:#ff3300;}
+
+.user_id_box{ padding:80px 160px; height:100%;}
+.user_id_box>p{ color:#9b9b9b; margin-bottom:10px;}
+.user_id_box>p:nth-child(2){ margin-bottom:44px;}
+.user_id_box form input{ width:100%; margin-top:20px;}
+.user_id_box form input[type='submit']{ margin-top:38px;}
+
+.security_setting .prompt,
+.password_box .prompt,
+.user_mobile_box .prompt,
+.bind_mobile_box .prompt,
+.bind_email_box .prompt,
+.user_email_box .prompt{margin:10px 0px 12px 0px; font-size:13px; color:#ff6600;}
+
+
+.evaluate_info{padding: 10px 34px 30px 34px;}
+.evaluate_info h3{font-size:18px; color:#444444; letter-spacing:0; line-height: 42px; text-align:left;}
+.evaluate_info div{text-indent: 2em;font-size:14px; color:#444444; letter-spacing:0; line-height:24px; text-align:left;}
+
+.evaluate_content{margin: 0 auto; background: #fff; padding:40px 34px;}
+.evaluate_content form{padding: 0 34px;}
+.evaluate_content .form_item{margin-bottom: 8px;}
+.evaluate_content .form_item dt, .evaluate_content .form_item dd{padding: 4px 14px; }
+.evaluate_content .form_item dt{font-size: 16px;padding: 4px 0px;}
+.evaluate_content .form_item label{min-width: 240px;margin: 5px 0; }
+.evaluate_content .form_item label.radio input[type=radio] + span{font-size: 14px;padding: 0 20px 0;}
+.evaluate_content .form_item span{font-size: 14px; color:#444;}
+.evaluate_content .submit_box{margin-top: 40px; text-align:right;}
+.evaluate_content .show_tips{transition: 1s;font-size:14px;color:#ff3300;letter-spacing:0;text-align:left;padding: 18px 0;}
+.evaluate_content .hide_tips{display: none; transition: 1s;}
+
+.qrcode_box{ padding:80px 80px; height:calc(100% - 120px); text-align:center;}
+.qrcode_box .wechat_pay p{ text-align:center;}
+.qrcode_box .wechat_pay h3{ text-align:center; font-size:26px; font-weight:700; color:#f60; margin:10px 0 20px 0;}
+.qrcode_box .qrcode{ width:182px; margin:0 auto; padding:6px; border:1px solid #d3d3d3;}
+.qrcode_box .qrcode p{ text-align:center; font-size:12px;}
+.qrcode_box .qrcode p:nth-child(2){ margin-top:10px; display:block;}
+.qrcode_box a{ display:block; text-align:center; margin-top:10px;}
+.qrcode_box input{ margin-top:40px; width:182px;}
+
+.evaluate_result{ padding:40px 100px;}
+.evaluate_result_header{ overflow:hidden; border-bottom:1px solid #e2e2e2; padding: 0 0 10px;}
+.evaluate_result_header h4{ float:left; font-size:18px;}
+.evaluate_result_header span{ color:#f27811; font-size:24px;}
+.evaluate_result_header a{ float:right; height:100%; line-height:32px; font-size:13px;}
+.evaluate_result_bottom{ padding:25px;}
+.evaluate_result_bottom h5{ font-size:13px;}
+.evaluate_result_bottom p{ line-height:22px;}
+.evaluate_result_bottom .evaluate_result_content{ margin-top:36px;}
+.evaluate_result_bottom .evaluate_result_content>p{ margin-top:10px; color:#616161;}
+.evaluate_result_bottom a{ display:block; margin-top:20px;}
+.evaluate_result form{ display:block; text-align:right; padding:0 25px;}
+
+.alipay{ width:500px; height:461px; margin:0 auto; margin-top:10%; padding:50px;}
+.alipay>form{ margin-top:100px; text-align:center;}
+.alipay>form input:last-child{ margin-left:20px;}
+.alipay h3{ font-size:20px; color:#4a4a4a; margin-bottom:12px;}
+.alipay h4{ font-size:16px; color:#4a4a4a; margin-top:13px;}
+.alipay p{ color:#888; line-height:24px;}
+
+.offline_box{ padding:80px 80px; height:calc(100% - 120px);}
+.offline_box p{ color:#999; font-size:16px; margin-bottom:10px; line-height:28px;}
+.offline_box p span{ color:#ff6600;}
+.offline_box table{ margin-top:40px;}
+.offline_box tr{ line-height:28px;}
+.offline_box td{ color: #566572; font-size:16px;}
+.offline_box td.filed{ width:96px; text-align:left;}
+.offline_box>input,
+.offline_box form>input{ display:block; margin:0 auto; margin-top:50px; width:136px;}
+.offline_box dl{ color: #566572; font-size:16px; line-height:28px; margin-top:50px;}
+.offline_box dl dt{ margin-bottom:10px;}
+.offline_box dl dd{ width:100%; height:42px; line-height:42px; border:1px solid #e0e0e0; border-top:0; padding:2px 10px;}
+.offline_box dl dd:nth-child(2){ border-top:1px solid #e0e0e0; border-top-left-radius:3px; border-top-right-radius:3px; }
+.offline_box dl dd:nth-child(5){ border-bottom-left-radius:3px; border-bottom-right-radius:3px; }
+.offline_box dl dd input,
+.offline_box dl dd select{ width:100%; border-color:#fff; height:100%; line-height:normal; display:block;}
+.offline_box dl dd select{ padding:0;}
+
+.rule_box *{line-height: 1.8;}
+.rule_box div{text-align: left;text-indent: 2em;}
+.rule_box dt{margin: 10px 0;}
+.rule_box dd{text-align: left;margin: 3px 0;}
+.rule_box dt div{color: #000; font-size: 16px;line-height: 20px;}
+.rule_box .important_tips dt{text-align: left;margin-top: 20px; line-height: 30px;color: #000;}
+.rule_box .bold{color: #000;}
+.rule_box .agreement_header div{margin: 12px 0;}

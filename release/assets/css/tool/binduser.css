@@ -1,0 +1,9 @@
+.bind_user_success i{ display:block; width:131px; height:120px; margin:0 auto; line-height:126px;}
+.bind_user_success i:before{ content:'\e60a'; font-size:131px; color:#f6a623;}
+.bind_user_success label{ display:block; font-size:28px; color:#4a4a4a; text-align:center; margin:36px 0px 15px 0px;}
+.bind_user_success p{ text-align:center; color:#9b9b9b;}
+
+.bind_user_box,
+.bind_user_success{ position:absolute; top:0; bottom:0; right:0; left:0; margin:auto; width:300px; height:255px; overflow:hidden;}
+.bind_user_box{ font-size:20px; text-align:center; line-height:100%;}
+.bind_user_box span{ display:inline-block; margin-top:120px;}

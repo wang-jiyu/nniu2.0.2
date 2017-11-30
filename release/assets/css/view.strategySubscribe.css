@@ -1,0 +1,59 @@
+body{background-color: #F2F2F2;padding: 0 90px;box-sizing: border-box;}
+#subscribe{width: 1200px;margin: 0 auto;}
+table{border-collapse:collapse;}
+/*过往交易-s*/
+/*日历*/
+#mydate,#mydate_two{height: 26px;    width: 90px;    padding-left: 5px;}
+
+
+.calendar{height: 45px;    padding-top: 5px;    box-sizing: content-box;}
+.iptgroup{width:115px;margin:0px 0 0 auto;padding-top: 6px;    position: relative; top: -53px;  right: 20px;}
+.iptgroup li{float:left;height:30px;line-height:30px;    padding: 0 6px;}
+.iptgroup li .ipticon{width: 148px;background:url(../images/strategy/calendar.png) 95.5% 50% no-repeat;border:1px #CFCFCF solid;padding:3px;}
+.calendar_s{position: relative;}
+.iptgroup .calendar_s::before{content: "";width: 1px;height: 28px;display:block;position:absolute;right:36px;top:4px;background: #E4E4E4;}
+.iptgroup li.calendar_btn{width: 48px;cursor:pointer;height: 18px;border: 1px solid #FF7700;border-radius: 100px;color:#FF7700;    margin: 7px 0 0 10px;font-size: 12px;padding:0;line-height: 18px;text-align: center;}
+
+
+.transaction_main{padding: 0px 0 25px 0;background: #FFFFFF;width: 1200px;    margin: 0 auto;}
+.transaction_box{width: 1200px;margin: 0 auto;box-sizing: content-box;}
+.transaction_table{margin: 0 auto;border-collapse:collapse;}
+.transaction_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 31px;}
+
+.transaction_table th:nth-child(11){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 77px center;}
+.red{color: #FF0000!important;}
+.green{color: #129206!important;}
+.CurrentCc_table .red{font-weight: bold;}
+.CurrentCc_table .green{font-weight: bold;}
+.transaction_table td{text-align: center;font-size:13px;border: 1px solid #E4E4E4;height: 38px;color: #4A4A4A;}
+/*过往交易-e*/
+
+/*今日调仓-s*/
+.today_tc_main{width: 1200px;background: #FFFFFF;margin: 0 auto;padding-bottom: 35px;}
+.today_tc{padding-left: 30px;box-sizing: content-box;/*max-height: 343px;overflow-y: auto;*/ width: 100%;}
+.today_tc_date{width:848px;font-size: 14px;color: #222222;text-align: right;height: 35px;line-height: 35px;position: relative;top: -33px; right: -305px}
+.today_tc_table{width: 848px;}
+.today_tc_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 32px;}
+.today_tc_table td{height: 38px;font-size:13px;text-align: center;border: 1px solid #E4E4E4;color: #4A4A4A;}
+.today_tc_table th:nth-child(5){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 71px center;}
+/*今日调仓-e*/
+
+/*当前持仓-s*/
+.CurrentCc_main{padding: 26px 0 45px 30px; background: #FFFFFF;width: 1170px;margin: 0 auto;}
+.CurrentCc_box{/*height: 307px;overflow-y: auto;*/}
+.CurrentCc_table{width: 1074px;color: #858585;}
+.CurrentCc_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 32px;}
+.CurrentCc_table td{height: 38px;font-size:13px;text-align: center;border: 1px solid #E4E4E4;color: #4A4A4A;}
+.CurrentCc_table th:nth-child(6){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 93px center;}
+/*当前持仓-e*/
+
+/*策略暂无数据-s*/
+.no_data{font-size: 24px;line-height:24px;color: #828282;text-align: center;margin-top: 30px;}
+/*策略暂无数据-e*/
+
+
+/*详情（今日调仓,当前持仓,过往交易tab栏)*/
+.detailsTab{width: 1200px;margin: 0 auto;background-color: #FFFFFF;height: 52px;line-height: 52px;border-bottom: 1px solid #E1DFDF;}
+.detailsTab ul{margin-left: 30px;}
+.detailsTab li{float: left;width:91px;height:51px;text-align:center;margin-right: 40px;font-size: 20px;cursor:pointer;color:#4A4A4A;letter-spacing: -0.6px;border-bottom: 3px solid transparent;}
+.detailsTab ul li.checked{border-bottom: 3px solid #FF7700;color: #FF7700!important;}

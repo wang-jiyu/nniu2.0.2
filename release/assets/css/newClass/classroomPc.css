@@ -1,0 +1,134 @@
+/*base*/
+*{outline:none; margin:0; padding:0;}
+input,textarea,select,[contenteditable=true],[contenteditable=true]>*{ -webkit-user-select:auto; -ms-user-select:auto; user-select:auto;}
+html{ -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+html, body{ height:100%; width:100%; -webkit-font-smoothing:antialiased;}
+body{ font-size:14px; background:#f2f2f2; color:#4a4a4a;}
+body, input, textarea, select{ font-family:"Open Sans", "MicroSoft YaHei", "Arial", "HELVETICA"; color:#4a4a4a;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{ margin:0; padding:0; border:0;}
+
+i, label, b{ display:inline-block; vertical-align:middle;}
+p, i, h1, h2, h3, h4, h5, h6, em, i{ font-weight:normal; font-style:normal}
+dl, ol, ul{ list-style:none;}
+
+::-webkit-scrollbar{ width:5px; height:10px;}
+::-webkit-scrollbar-thumb{ border-radius:20px; background:#EEEEEE;}
+::-webkit-scrollbar-thumb:hover{ background:#EEEEEE;}
+::-webkit-scrollbar-track{background:rgba(120, 120, 120, 0.5); }
+::-webkit-scrollbar-corner{ background:rgba(120, 120, 120, 0.5); }
+::-webkit-input-placeholder{ color:#CCCCCC;}
+
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:""; display:table; clear:both;}
+.visibility{ visibility:inherit !important;}
+/*base*/
+
+/*classRoomVideo*/
+.classRoomVideo{ width: 1200px; height: 577px; margin:0 auto 10px auto;}
+
+/*课程金股*/
+.courseGoldStock{ width: 1200px; margin:0 auto 15px auto; background: #fff; padding-bottom: 10px; }
+.classRoomHeader{ height: 46px; font-size: 18px; color: #222222; padding: 13px 20px; box-sizing: border-box; background: #fff; border-bottom: solid 1px #f2f2f2;}
+.classRoomHeader .classRoomTitle{ display: block; float: left; border-left: solid 2px #FF723E; padding-left: 10px; line-height: 1;}
+.classRoomHeader .classRoomTime{ display: block; float: right; font-size: 16px; color: #8E694B; line-height: 1;}
+.courseGoldWrap{ margin: 40px 30px 10px 30px; overflow-x: auto;}
+.courseGoldWrapScroll{  height: 252px;}
+.courseGoldPanel{background: #FFEDCE; border-radius: 5px; width: 612px; height: 238px; float: left; margin-right: 10px;}
+.courseGoldPanel .curseGoldName{ height: 55px; line-height: 55px; padding: 0 30px;font-size: 20px; color: #8E694B;}
+.courseGoldPanel .curseGoldInterval{ height: 70px; padding: 22px 30px;font-size: 18px; color: #FFAB3D; box-sizing: border-box; background: #FFEDBF;}
+.courseGoldPanel .curseGoldInterval > span{ float: left; width: 27%}
+.courseGoldPanel .curseGoldInterval > span:first-child{ width: 46%;}
+.courseGoldPanel .curseGoldInterval > span em{ display: inline-block; font-size: 18px; color: #8E694B; padding-left: 10px;}
+.curseGoldDescribe{ font-size: 16px; color: #8E694B; padding: 10px 30px; line-height: 1.5;}
+
+.allCourses{ width: 1200px; margin: 0 auto;margin-bottom: 55px;}
+.practiceCourses{ margin-right:8px;}
+.practiceCourses,.systematiCourse{ width: 596px; height: 600px; float: left; background: #fff;}
+.courseScroll{ padding: 15px 8px 10px 25px;}
+.courseList{ height: 500px; overflow-y: auto;}
+.courseList li{ width: 530px; height: 125px; padding: 17px 0; box-sizing: border-box; border-bottom: solid 1px #f2f2f2; position: relative;}
+.courseList .courseLeftImg{ width: 150px; height: 90px; border-radius: 5px; float: left; margin-right: 15px; overflow: hidden; position: relative; background: #eeeeee;}
+.courseList .courseLeftImg > img{width: 150px; height: 90px; }
+.courseList .curseTitle{ display: block;font-size: 18px; height: 48px; color: #8E694B; line-height: 1;}
+.courseList .curseTime{ margin-bottom: 10px;}
+.courseList .curseTime,.courseList li .curseonline{ display: block;font-size: 14px;color: #A8A8A8; line-height: 1;}
+.courseList .liveTelecast .curseTime{ color: #FF723E;}
+.courseList .ChatImmediately{ width: 75px; height: 30px; background: #FF7700; text-align: center; color: #fff; line-height: 30px; border-radius: 30px; position: absolute; right: 0; bottom: 15px; font-size: 16px; cursor: pointer;}
+.courseList .videoPlaying .courseLeftImg{ border: solid 1px #FF723E;}
+/*.courseList .liveTelecastMask{ display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); color: #fff; text-align: center; font-size: 16px; line-height: 90px;}*/
+.liveTelecastActive{ display:block; position:absolute; right:0; bottom:0; width:63px; height:20px; background: url("../../images/classroomPc/playing.png") no-repeat; background-size:cover; line-height:20px; font-size:10px; color:#fff;text-align: right; padding-right:5px; }
+.liveTelecastActive .musicActive{display:inline-block; position: absolute; left: 13px; bottom: 5px;}
+.liveTelecastActive .musicActive i{ display:inline-block; width:2px; height:11px; background:#fff;position: absolute; bottom:0;}
+.liveTelecastActive .musicActive i:nth-of-type(1) {  left: 0;}
+.liveTelecastActive .musicActive i:nth-of-type(2) {  left: 4px;}
+.liveTelecastActive .musicActive i:nth-of-type(3) {  left: 8px;}
+.liveTelecastActive .musicActive.active i:nth-of-type(1) {
+    -webkit-animation: wave 0.66s linear infinite;
+    animation: wave 0.66s linear infinite;
+}
+.musicActive.active i:nth-of-type(2) {
+    -webkit-animation: wave 0.8s linear infinite;
+    animation: wave 0.8s linear infinite;
+}
+.musicActive.active i:nth-of-type(3) {
+    -webkit-animation: wave 0.7s linear infinite;
+    animation: wave 0.7s linear infinite;
+}
+@-webkit-keyframes wave{
+    0%{height:2px}
+    50%{height: 11px}
+    100%{height: 10px}
+}
+@keyframes wave{
+    0%{height:2px}
+    50%{height: 11px}
+    100%{height: 10px}
+}
+/*roomList*/
+.chatRoomSection{ width: 1200px; margin:  auto;margin-bottom: 55px;}
+.roomList{ width: 1200px; border:solid 1px #e0dede; background: #fff; margin: 0 auto; margin-bottom: 15px;}
+.privateStringHeader{ border-bottom:solid 1px #e0dede; height: 45px; padding: 0 25px; line-height: 45px;}
+.privateStringTitle{ display: block; float: left; font-size: 14px; color: #FF6600;}
+.Participants{ display: block; float: right;font-size: 12px;color: #FF423D;}
+.roomListClosed{ display: block;float: right; width: 25px; font-size: 20px; color: #979797; text-decoration: none; text-align: right;}
+.privateStringContent{ width: 1190px;  height: 500px; margin: 10px auto;  overflow-y: auto;}
+.privateStringUl{ width: 1040px; margin: 0 auto;}
+.privateStringContent li{position: relative; margin-bottom: 38px;}
+.privateStringContent li .chatterTop{ margin-bottom: 10px;}
+.privateStringContent li .sendtime{font-size: 12px;  color: #888888;}
+.privateStringContent li .chatterName{font-size: 12px; color: #4A4A4A;}
+.privateStringContent li .chatterMessageImg{ width: 240px; max-width: 450px;}
+.privateStringContent li.rightSideChat .chatterFace{ width: 40px; height: 40px; border-radius: 50%; position: absolute; right: -50px; top: 0; background: #dddddd;}
+.privateStringContent li.rightSideChat .chatterTop{ overflow: hidden;}
+.privateStringContent li.rightSideChat span{ display: inline-block; margin-left: 10px; float: right; }
+.privateStringContent li.rightSideChat .chatterIdentity{font-size: 11px; color: #FFFFFF; background: #FF423D; border-radius: 15px; padding: 0 5px;}
+.privateStringContent li.rightSideChat .chatterMessage p{background: rgba(255,119,0,0.10); border: 1px solid #FFC490; border-radius: 5px; line-height: 1.5; ont-size: 14px; color: #222222; padding: 10px; display: inline-block; min-width: 150px;}
+
+.privateStringContent li.leftSideChat .chatterFace{ width: 40px; height: 40px; border-radius: 50%; position: absolute; left: -50px; top: 0; background: #dddddd;}
+.privateStringContent li.leftSideChat span{ display: inline-block; margin-right: 10px; }
+.privateStringContent li.leftSideChat .chatterIdentity{font-size: 11px; color: #FFFFFF; background: #FF7700; border-radius: 15px; padding: 0 5px;}
+.privateStringContent li.leftSideChat .chatterMessage p{background: rgba(255,255,255,0.10); border: 1px solid #E1DFDF; border-radius: 5px; line-height: 1.5; ont-size: 14px; color: #222222; padding: 10px; display: inline-block; min-width: 150px;}
+
+.SendChatBox{ width: 1200px; height: 220px; background: #fff; margin: 0 auto;}
+.SendChatContentTop{ height: 44px; border-bottom:1px solid #D8D8D8;}
+.SendChatContentTop > span{ display: inline-block; margin: 8px 0 0 10px; cursor: pointer;}
+.SendChatContent{ position: relative;}
+.SendChatContentTextarea{ width: 1045px; height: 170px; padding: 32px; box-sizing: border-box; font-size: 14px;  color: #9B9B9B; line-height: 1.5;border: none; outline: none;}
+.SendChatContent .sendBtn{display:block; position:absolute; right:30px; top: 58px;  background: #FF7700; border-radius: 100px; width: 117px; height: 50px; line-height: 50px; font-size: 20px; color: #FFFFFF; text-decoration: none; text-align: center;}
+.SendChatContent .remainingWords{display:block; position:absolute; right:30px; top: 140px; font-size: 14px; color: #9B9B9B;}
+
+/*播放器居中*/
+.videoBox{width:1190px;margin: 0 auto;margin-bottom: 10px;}
+.video-js .vjs-big-play-button{top: 50%!important;    left: 50%!important;;    margin-left: -0.75rem;    margin-top: -1.5rem;}
+
+
+
+

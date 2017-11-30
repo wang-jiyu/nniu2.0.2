@@ -1,0 +1,108 @@
+/*我的未订阅  火力推荐模块样式开始*/
+.fire-recommendation {
+    width: 350px;
+    height: 312px;
+    background: #fff;
+    border: 1px solid #e1dfdf;
+    float: left;
+    font-family:"Microsoft YaHei", "微软雅黑";
+}
+
+.fire-recommendation .recommendation-title {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 54px;
+    padding-top: 22px;
+    padding-left: 15px;
+    color: #000;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #e1dfdf;
+}
+
+.fire-recommendation .recommendation-content {
+    // height: 258px;
+    background: #fff;
+}
+
+.fire-recommendation .recommendation-content li {
+    width: 335px;
+    height: 78px;
+    margin-left: 15px;
+    border-bottom: 2px dotted #e1dfdf;
+}
+
+.fire-recommendation .recommendation-content li .yesterday-yield {
+    float: left;
+    box-sizing: border-box;
+    width: 138px;
+    padding: 20px 0;
+    padding-left: 21px;
+}
+
+.fire-recommendation .recommendation-content li .yesterday-yield .val {
+    font-size: 22px;
+    color: #ec0000;
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.fire-recommendation .recommendation-content li .yesterday-yield .desc {
+    font-size: 12px;
+    color: #828282;
+    line-height: 14px;
+}
+
+.fire-recommendation .recommendation-content li .line {
+    float: left;
+    width: 2px;
+    height: 24px;
+    margin: 27px 30px 27px 0;
+    background: #e1dfdf;
+}
+
+.fire-recommendation .recommendation-content li .recommended-stock {
+    float: left;
+    width: 108px;
+    padding: 20px 0;
+    margin-right: 30px;
+}
+
+.fire-recommendation .recommendation-content li .recommended-stock .tit-name {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.fire-recommendation .recommendation-content li .recommended-stock .characteristic {
+    font-size: 0;
+}
+
+.fire-recommendation .recommendation-content li .recommended-stock .characteristic span {
+    display: inline-block;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 16px;
+}
+
+.fire-recommendation .recommendation-content li .recommended-stock .characteristic span:last-child {
+    margin-right: 0px;
+}
+
+.fire-recommendation .recommendation-content li .subscribe {
+    float: left;
+    cursor: pointer;
+    margin: 27px 0;
+    padding-left: 21px;
+    background: url("../../images/strategy/index/subscribe-pc.png") no-repeat;
+    background-size: 17px 23px;
+}
+
+.fire-recommendation .recommendation-content li:last-child {
+    border-bottom: none;
+}

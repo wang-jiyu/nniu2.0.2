@@ -1,0 +1,29 @@
+.signup_box{ height:446px; padding-top:56px; background:#f2f2f2;}
+.signup_box form{ width:350px; margin:0px auto;}
+.signup_box input[type="text"],
+.signup_box input[type="password"]{ width:350px; height:40px; margin-bottom:20px; font-size:14px; padding-left:15px;}
+.signup_box input[type="submit"]{ width:350px; height:36px; font-size:16px;}
+.signup_box form .code_box{overflow:hidden;}
+.signup_box form .code_box input.mobile{width:120px; float:left;}
+.signup_box form .code_box .code{width:220px; float:right; position:relative;}
+.signup_box form .code_box .code input{width:220px;}
+.signup_box form .code_box .code img{position:absolute; right:0; top:0; width:90px; height:40px;}
+.signup_box form .prompt{margin:-8px 0px 22px 0px; font-size:13px; color:#ff6600; }
+.signup_box form .prompt span{ color:#999; margin:0 0 0 10px;}
+.signup_box .remark{ font-size:13px; color:#9b9b9b; text-align:center; display:block; margin-bottom:23px;}
+.signup_box .number{ text-align:center; color:#4a4a4a; font-size:28px; margin:27px 0px; line-height:28px;}
+.signup_box .sms_remark{ font-size:13px; color:#9b9b9b; text-align:center; display:block;}
+.signup_box .resend{ margin:0px 0px 27px 0px;}
+.signup_box .prompt_code{margin:-10px 0px 30px 0px; font-size:13px; color:#ff6600;}
+.signup_box .success i{display:block; width:131px; height:131px; margin:0 auto; margin-top:35px;}
+.signup_box .success i:before{content:'\e60a'; font-size:131px; color:#f6a623;}
+.signup_box .success label{display:block; font-size:28px; color:#4a4a4a; text-align:center; margin:36px 0px 15px 0px;}
+.signup_box .success p{text-align:center; color:#9b9b9b;}
+
+.signup_box .agreement dt, .signup_box .agreement dd div{text-indent: 2em;}
+.signup_box .agreement dl{margin: 5px 0;}
+.signup_box .agreement *{line-height:1.8;}
+.signup_box .agreement dt h1{text-align: center; font-size: 14px; text-indent: 0;}
+.signup_box .agreement dt h2{text-align: center; font-size: 14px;text-indent: 0;}
+.signup_box .agreement dt h3{text-align: left; font-size: 14px;text-indent: 0;}
+

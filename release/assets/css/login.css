@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.marginTop150{
+    margin-top:150px;
+}
+.marginTop20{
+    margin-top:20px;
+}
+.input-group{
+
+}
+
+.shadow,.show{bottom:auto;position:fixed;background:rgba(27, 21, 21, 0.5);top:260px;width:300px;left:50%;padding:10px;border-radius:10px;text-align:center;font-size:15px;color:#ffffff;z-index:30;display:none;margin-left: -150px}
+.show{display:block}

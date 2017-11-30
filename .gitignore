@@ -1,0 +1,17 @@
+.svn/
+.tags
+*.tar
+node_modules/
+.idea
+.project
+release/assets/scripts/
+release/assets/scripts.bak/
+release/test/
+upTestServe.sh
+application_branch_pay/
+application_branch_strategy/
+node_modules_branch_strategy/
+webpack.config.js.bak
+*.sh
+*.tgz
+*.bak

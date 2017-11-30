@@ -1,0 +1,73 @@
+@font-face{
+	font-family:'Open Sans';
+	src:url('../fonts/opensans-light-webfont.woff') format('woff'),
+	url('../fonts/opensans-light-webfont.ttf') format('truetype');
+	font-weight:300;
+	font-style:normal;
+}
+
+@font-face{
+	font-family:'Open Sans';
+	src:url('../fonts/opensans-regular-webfont.woff') format('woff'),
+	url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1489044077296'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1489044077296#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1489044077296') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1489044077296') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1489044077296#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+*{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-user-select:none; -ms-user-select:none; user-select:none; outline:none;}
+input,textarea,select,[contenteditable=true],[contenteditable=true]>*{ -webkit-user-select:auto; -ms-user-select:auto; user-select:auto;}
+html{ -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+html, body{ height:100%; width:100%; -webkit-font-smoothing:antialiased;}
+body{ font-size:14px; background:#f2f2f2; color:#4a4a4a;}
+body, input, textarea, select{ font-family:"Open Sans", "MicroSoft YaHei", "Arial", "HELVETICA"; color:#4a4a4a;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{ margin:0; padding:0; border:0;}
+
+i, label, b{ display:inline-block; vertical-align:middle;}
+p, i, h1, h2, h3, h4, h5, h6, em, i{ font-weight:normal; font-style:normal}
+dl, ol, ul{ list-style:none;}
+
+select.gray{background:url("/assets/images/select_arrow.png") no-repeat right center; background-size:31px 6px;-webkit-padding-end: 26px; -webkit-padding-start: 10px; -webkit-appearance: none; cursor:pointer;}
+
+h1{ font-size:26px;}
+h2{ font-size:24px;}
+h3{ font-size:22px;}
+h4{ font-size:20px;}
+h5{ font-size:18px;}
+h6{ font-size:16px;}
+
+a{ color:#4990e2;}
+a:link{ text-decoration:none;}
+a:visited{ text-decoration:none; color:#1170CF;}
+a:hover{ text-decoration:none; color:#0099FF;}
+a:active{ text-decoration:none; color:#1170CF;}
+a[disabled],[disabled]{ color:#999999; cursor:default !important;}
+
+::before,::after{ font-family: "iconfont"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+::-webkit-scrollbar{ width:5px; height:7px;}
+::-webkit-scrollbar-thumb{ border-radius:20px; background:rgba(120, 120, 120, 0.5);}
+::-webkit-scrollbar-thumb:hover{ background:rgba(120, 120, 120, 0.7);}
+::-webkit-scrollbar-track{ background:#EEEEEE;}
+::-webkit-scrollbar-corner{ background:#EEEEEE;}
+::-webkit-input-placeholder{ color:#CCCCCC;}
+
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:""; display:table; clear:both;}
+.visibility{ visibility:inherit !important;}
+.full_wrap{ width:100%; height:100%;}

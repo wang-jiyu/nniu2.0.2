@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0; margin:0 auto;} 
+body{ font-size:14px;margin:0 auto; color: #666666; background: #f8f8f8;}
+img{ border: none;}
+li{list-style: none;}
+#example{ width:100%; overflow: hidden; background: #f2f2f2;}
+/* 常见问题 */
+.problem—box{ margin-top:20px; }
+.nav_color{ color:blue; }
+.nav_left{ float:left;}
+.nav_right{ float:right;}
+.nav_right img{ width:10px; height:20px; margin-left:20px; margin-right:10px; float: left}
+.nav_right p{ float: left}
+.conter{ width:1200px; background:#fff;}
+.conter .conter_top{ line-height:50px;border-bottom:1px solid #E1DFDF; padding-top:10px;}
+.conter h3{ margin-left:30px; font-size:20px; font-weight:400}
+.conter ul{ width:1138px;}
+.conter ul li{ line-height:25px; padding-top:20px;}
+.conter ul li h4{ color:#ff7700; font-size:16px;}
+.conter ul li p{  font-size:13px;}
+.conter_botttom h4{ color:#ff7700;font-size:16px; width:1138px; padding-top:20px;}
+.conter_img{ width:1094px; padding-top:20px;}
+.conter_img img{ margin-right:20px;}
+.conter_font{ width:1138px; overflow: hidden; font-size:14px; padding-top:5px;}
+.conter_font p{ float: left; margin-right:30px;}
+.conter_phone{ width:1170px; margin-left:30px; overflow: hidden}
+.conter_phone .phone_left{ float: left; padding-top:20px;}
+.conter_phone .phone_left h5{ 
+		font-size:16px;
+		 color:#ff7700;
+		 margin-bottom: 10px;
+	}
+.conter_phone .phone_right{ float: right}
+.conterimg{ margin-left:18px;}

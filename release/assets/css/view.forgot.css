@@ -1,0 +1,39 @@
+.reset_box{ height:446px; padding-top:56px; background:#f2f2f2;}
+.reset_box h1{margin:0 auto; font-size:28px;color:#4a4a4a; text-align: center; font-weight: normal;}
+.reset_box h1.check_mobile_title{margin: 0 auto 48px auto;}
+.check_code_text{font-size:13px; line-height: 20px; color:#9b9b9b; width: 330px; margin: 28px auto; text-align: center; }
+.check_code_text a{color: #1170CF;}
+.reset_box form{ width:350px; margin:0 auto;}
+.reset_box input[type="text"],
+.reset_box input[type="password"]{ width:350px; height:40px; margin-bottom:20px; font-size:14px; padding-left:15px;}
+.reset_box input[type="submit"]{ width:350px; height:36px; font-size:16px;}
+.reset_box .reset_password input[type="password"]{margin-bottom: 0}
+.reset_box .code_box{overflow:hidden;}
+.reset_box .code_box input.mobile{width:120px; float:left;}
+.reset_box .code{position:relative;}
+.reset_box .code input{padding-right:100px;}
+.reset_box .code img{position:absolute; right:0; top:0; width:90px; height:40px; cursor: pointer}
+.reset_box .prompt{margin:-8px 0px 22px 0px; font-size:13px; color:#ff6600; }
+.reset_box .prompt span{ color:#999; margin:0 0 0 10px;}
+.reset_box .remark{ font-size:13px; color:#9b9b9b; text-align:center; display:block; margin-bottom:23px;}
+.reset_box .number{ text-align:center; color:#4a4a4a; font-size:28px; margin:27px 0px; line-height:28px;}
+.reset_box .sms_remark{ font-size:13px; color:#9b9b9b; text-align:center; display:block;}
+.reset_box .resend{ margin:0px 0px 27px 0px;}
+.reset_box .prompt_code{margin:-10px 0px 30px 0px; font-size:13px; color:#ff6600;}
+.reset_box .success i{display:block; width:131px; height:131px; margin:0 auto; margin-top:35px;}
+.reset_box .success i:before{content:'\e60a'; font-size:131px; color:#f6a623;}
+.reset_box .success label{display:block; font-size:28px; color:#4a4a4a; text-align:center; margin:36px 0px 15px 0px;}
+.reset_box .success p{text-align:center; color:#9b9b9b;}
+.reset_box .reset_password{margin-top: 40px;}
+.reset_password .password_tips{font-size:12px; color:#a1a1a1; text-align: center; margin: 14px auto 40px auto}
+.reset_success i{display: block; margin: 4px auto 36px auto; width: 131px; height: 131px; border-radius: 50%;
+    background: #f6a623; text-align: center; line-height: 131px;}
+.reset_success i:before{content: "\e61f"; font-size: 80px; color: #fff;}
+.reset_success h3{font-size:28px; color:#4a4a4a; text-align: center;}
+.reset_success p{font-size:14px; color:#9b9b9b; text-align: center; margin-top: 12px;letter-spacing:0.4px;}
+
+.reset_password_label{position: relative;}
+.reset_password_label input{padding-right: 40px;}
+.reset_box .reset_password_label input[type="text"], .reset_box .reset_password_label input[type="password"]{margin-bottom: 0}
+.show_password_icon{position: absolute;right: 0;top: 0; height: 40px;width: 40px;}
+.show_password_icon:before{content: '\e864';font-size: 18px;line-height: 40px;display: block; text-align: center; color:#bcbcbc; cursor: pointer; }

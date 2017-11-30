@@ -1,0 +1,936 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei","微软雅黑";
+}
+body{
+	background-color: #eeeeee;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*公共*/
+.levelCenter{
+	margin: 0 auto;
+}
+.mtop40{
+	margin-top: 40px;
+}
+.mtop10{
+	margin-top: 10px;
+}
+.mtop20{
+	margin-top: 20px;
+}
+/*卡片*/
+.unitCard{
+	width: 1200px;
+	height: 205px;
+	background-color: #fff;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.card-left-circle{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #FF7700;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.circle-num{
+	margin-top: 50px;
+	font-size: 32px;
+	color: #ff7700;
+	line-height: 20px;
+}
+.circle-num-desc{
+	margin-top: 16px;
+	font-size: 14px;
+	color: #828282;
+	line-height: 14px;
+}
+.card-right-info{
+	width: 960px;
+	display: inline-block;
+	vertical-align: top;
+}
+.unit-card-name{
+	font-size: 24px;
+	color: #4A4A4A;
+	line-height: 24px;
+}
+.unit-card-num-array span{
+	display: inline-block;
+	margin-right: 40px;
+}
+.unit-card-num-array span p{
+	width:70px;
+	text-align: center; 
+}
+.unit-card-desc{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.5em;
+	border-bottom: 1px solid #E0DEDE;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.card-desc-con-label{
+	color: #000;
+	font-weight: bold;
+}
+.card-desc-con-value{
+	color: #4a4a4a;
+    margin-right: 10px;
+}
+.unit-num{
+	font-size: 20px;
+	color: #ec0000;
+	margin-top: 20px;
+}
+.unit-num-name{
+	font-size: 12px;
+	color: #828282;
+}
+/*曲线图*/
+.curve{
+	background-color:#fff;
+	width: 1200px;
+}
+.curve-title{
+	padding: 21px 30px 11px 30px;
+	box-sizing: border-box;
+	border-bottom:1px solid #E1DFDF;
+}
+.curve-title-left,.curve-title-right{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.curve-title-left {
+    width: 965px;
+}
+.curve-title-left span{
+	font-size: 20px;
+	color: #4A4A4A;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 20px;
+}
+.curve-title-left ul{
+	display: inline-block;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+.curve-title-left ul li{
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.curve-title-left ul li.active{
+	color: #2878EA;
+}
+.curve-title-right span{
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-right:16px; 
+	box-sizing: border-box;
+	/*padding-left: 10px;*/
+}
+.curve-title-right span:last-child{
+	margin-right: 0;
+}
+.curve-pictrue{
+	width: 100%;
+	height: 306px;
+}
+/*无评阅状态*/
+.no-subscription-state{
+	background-color: #fff;
+	width: 1200px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+.markedness-title{
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #ff8603;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.subscription-appreciation-info{
+	width: 390px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.subscription-info-ico,.subscription-info-con{
+	display: inline-block;
+	vertical-align: middle;
+}
+.subscription-info-ico{
+	margin-right: 40px;
+}
+.subscription-info-con-title{
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 22px;
+}
+.subscription-info-con ul li{
+	font-size: 14px;
+	color: #000;
+	line-height: 22px;
+}
+.subscriptionButton{
+	width: 296px;
+	height: 44px;
+	background: #FF7700;
+	border-radius: 100px;
+	line-height: 44px;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	margin-top: 50px;
+}
+.subscription-buttonWz{
+	font-size: 18px;
+	}
+span.subscription-button-num{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.subscription-button-num i{
+	font-size: 12px;
+	margin-left: 5px;
+}
+/*过往交易*/
+.history-deal{
+	background-color: #fff;
+	width: 1200px;
+}
+.history-deal-table{
+	padding: 25px 30px;
+}
+.history-deal-title{
+	font-size: 20px;
+	color: #4A4A4A;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E1DFDF;
+	padding-left: 30px;
+}
+.table-list-title ul,.table-list ul{
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.table-list-title ul li,.table-list ul li{
+	display: inline-block;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	text-align: center;
+	width: 95px;
+}
+.table-list-title ul li:nth-child(3),.table-list ul li:nth-child(3){
+	width: 189px;
+}
+.table-list-title ul{
+	font-size: 14px;
+	background-color: #eee;
+}
+.table-list-title ul li{
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+
+.table-list ul li{
+	font-size: 13px;
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #eeeeee;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*公共*/
+.levelCenter{
+	margin: 0 auto;
+}
+.mtop40{
+	margin-top: 40px;
+}
+.mtop10{
+	margin-top: 10px;
+}
+.mtop20{
+	margin-top: 20px;
+}
+/*卡片*/
+.unitCard{
+	width: 1200px;
+	height: 205px;
+	background-color: #fff;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.card-left-circle{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #FF7700;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.circle-num{
+	margin-top: 50px;
+	font-size: 32px;
+	color: #ff7700;
+	line-height: 20px;
+}
+.circle-num-desc{
+	margin-top: 16px;
+	font-size: 14px;
+	color: #828282;
+	line-height: 14px;
+}
+.card-right-info{
+	width: 960px;
+	display: inline-block;
+	vertical-align: top;
+}
+.unit-card-name{
+	font-size: 24px;
+	color: #4A4A4A;
+	line-height: 24px;
+}
+.unit-card-num-array span{
+	display: inline-block;
+	margin-right: 40px;
+}
+.unit-card-num-array span p{
+	width:70px;
+	text-align: center; 
+}
+.unit-card-desc{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.5em;
+	border-bottom: 1px solid #E0DEDE;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.card-desc-con-label{
+	color: #000;
+	font-weight: bold;
+}
+.card-desc-con-value{
+	color: #4a4a4a;
+}
+.unit-num{
+	font-size: 20px;
+	color: #ec0000;
+	margin-top: 20px;
+}
+.unit-num-name{
+	font-size: 12px;
+	color: #828282;
+}
+/*曲线图*/
+.curve{
+	background-color:#fff;
+	width: 1200px;
+}
+.curve-title{
+	padding: 21px 30px 11px 30px;
+	box-sizing: border-box;
+	border-bottom:1px solid #E1DFDF;
+}
+.curve-title-left,.curve-title-right{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.curve-title-left {
+    width: 945px;
+}
+.curve-title-left span{
+	font-size: 20px;
+	color: #4A4A4A;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 20px;
+}
+.curve-title-left ul{
+	display: inline-block;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+.curve-title-left ul li{
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.curve-title-left ul li.active{
+	color: #2878EA;
+}
+.curve-title-right span{
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-right:16px; 
+	box-sizing: border-box;
+}
+.curve-title-right span:last-child{
+	margin-right: 0;
+}
+.curve-pictrue{
+	width: 100%;
+	height: 306px;
+}
+/*无评阅状态*/
+.no-subscription-state{
+	background-color: #fff;
+	width: 1200px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+.markedness-title{
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #ff8603;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.subscription-appreciation-info{
+	width: 390px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.subscription-info-ico,.subscription-info-con{
+	display: inline-block;
+	vertical-align: middle;
+}
+.subscription-info-ico{
+	margin-right: 40px;
+}
+.subscription-info-con-title{
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 22px;
+}
+.subscription-info-con ul li{
+	font-size: 14px;
+	color: #000;
+	line-height: 22px;
+}
+.subscriptionButton{
+	width: 296px;
+	height: 44px;
+	background: #FF7700;
+	border-radius: 100px;
+	line-height: 44px;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	margin-top: 50px;
+}
+.subscription-buttonWz{
+	font-size: 18px;
+	}
+span.subscription-button-num{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.subscription-button-num i{
+	font-size: 12px;
+	margin-left: 5px;
+}
+/*过往交易*/
+.history-deal{
+	background-color: #fff;
+	width: 1200px;
+}
+.history-deal-table{
+	padding: 25px 30px;
+}
+.history-deal-title{
+	font-size: 20px;
+	color: #4A4A4A;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E1DFDF;
+	padding-left: 30px;
+}
+.table-list-title ul,.table-list ul{
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.table-list-title ul li,.table-list ul li{
+	display: inline-block;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	text-align: center;
+	width: 95px;
+}
+.table-list-title ul li:nth-child(3),.table-list ul li:nth-child(3){
+	width: 189px;
+}
+.table-list-title ul{
+	font-size: 14px;
+	background-color: #eee;
+}
+.table-list-title ul li{
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+
+.table-list ul li{
+	font-size: 13px;
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+
+
+
+
+
+/*过往交易-s*/
+table{border-collapse:collapse!important;}
+/*日历*/
+#mydate,#mydate_two{height: 26px;    width: 90px;    padding-left: 5px;}
+#laydate_table{display: none;}
+/*.laydate_bottom{display: none;}*/
+
+.calendar{height: 45px;    padding-top: 5px;    box-sizing: content-box;}
+.iptgroup{width:115px;margin:0px 0 0 auto;padding-top: 6px;    position: relative;top: -53px; right: 20px;}
+.iptgroup li{float:left;height:30px;line-height:30px;    padding: 0 6px;}
+.iptgroup li .ipticon{width: 148px;background:url(../images/strategy/calendar.png) 95.5% 50% no-repeat;border:1px #CFCFCF solid;padding:3px;}
+.calendar_s{position: relative;}
+.iptgroup .calendar_s::before{content: "";width: 1px;height: 28px;display:block;position:absolute;right:36px;top:4px;background: #E4E4E4;}
+.iptgroup li.calendar_btn{width: 48px;cursor:pointer;height: 18px;border: 1px solid #FF7700;border-radius: 100px;color:#FF7700;    margin: 7px 0 0 10px;font-size: 12px;padding:0;line-height: 18px;text-align: center;}
+
+
+.transaction_main{padding: 0px 0 25px 0;background: #FFFFFF;width: 1200px;    margin: 0 auto;}
+
+.transaction_box{width: 1200px;margin: 0 auto;/*height: 318px;overflow-y: auto;*/box-sizing: content-box; padding: 20px 30px;}
+.transaction_table{width: 848px;}
+
+.transaction_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 31px;}
+
+.transaction_table th:nth-child(11){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 77px center;}
+.red{color: #FF0000}
+.green{color: #129206}
+.CurrentCc_table .red{font-weight: bold;}
+.CurrentCc_table .green{font-weight: bold;}
+.transaction_table td{text-align: center;font-size:13px;border: 1px solid #E4E4E4;height: 38px;color: #4A4A4A;}
+/*过往交易-e*/
+
+/*今日调仓-s*/
+.today_tc_main{width: 1200px;background: #FFFFFF;margin: 0 auto;padding-bottom: 35px;}
+.today_tc{padding-left: 30px;box-sizing: content-box;/*max-height: 343px;overflow-y: auto;*/ width: 100%;}
+
+.today_tc_date{
+	width: 86px;
+    font-size: 14px;
+    color: #222222;
+    text-align: right;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    top: -46px;
+    right: -1050px;
+}
+.today_tc_table{width: 848px;}
+
+.today_tc_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 32px;}
+.today_tc_table td{height: 38px;font-size:13px;text-align: center;border: 1px solid #E4E4E4;color: #4A4A4A;}
+.today_tc_table th:nth-child(5){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 90px center;}
+/*今日调仓-e*/
+
+/*当前持仓-s*/
+.CurrentCc_main{padding: 23px 0 45px 30px; background: #FFFFFF;width: 1170px;margin: 0 auto;}
+.CurrentCc_box{/*height: 307px;overflow-y: auto;*/}
+.CurrentCc_table{width: 1074px;color: #858585;}
+.CurrentCc_table th{background: #EEEEEE;border: 1px solid #E4E4E4;height: 40px;font-weight: normal;font-size: 14px;color: #4A4A4A;padding:0 32px;}
+.CurrentCc_table td{height: 38px;font-size:13px;text-align: center;border: 1px solid #E4E4E4;color: #4A4A4A;}
+.CurrentCc_table th:nth-child(6){background:#EEEEEE url(../images/strategy/transaction_arrow.png) no-repeat 93px center;}
+/*当前持仓-e*/
+
+/*策略暂无数据-s*/
+.no_data_box{width: 1200px; margin: 0 auto; margin-bottom: 162px;}
+.no_data{font-size: 24px;line-height:24px;color: #828282;text-align: center;padding-top: 30px;background-color: #eeeeee;}
+.no_data_bj{width: 100%;height: 13px;background-color: #FFFFFF;}
+/*策略暂无数据-e*/
+
+
+/*详情（今日调仓,当前持仓,过往交易tab栏)*/
+.detailsTab{width: 1200px;margin: 0 auto;background-color: #FFFFFF;height: 52px;line-height: 52px;border-bottom: 1px solid #E1DFDF;}
+.detailsTab ul{margin-left: 30px;}
+.detailsTab li{float: left;width:91px;height:51px;text-align:center;margin-right: 40px;font-size: 20px;cursor:pointer;color:#4A4A4A;letter-spacing: -0.6px;border-bottom: 3px solid transparent;}
+.detailsTab ul li.checked{border-bottom: 3px solid #FF7700;color: #FF7700!important;}
+
+/*=======*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #eeeeee;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*公共*/
+.levelCenter{
+	margin: 0 auto;
+}
+.mtop40{
+	margin-top: 40px;
+}
+.mtop10{
+	margin-top: 10px;
+}
+.mtop20{
+	margin-top: 20px;
+}
+/*卡片*/
+.unitCard{
+	width: 1200px;
+	height: 205px;
+	background-color: #fff;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.card-left-circle{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #FF7700;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.circle-num{
+	margin-top: 50px;
+	font-size: 32px;
+	color: #ff7700;
+	line-height: 20px;
+}
+.circle-num-desc{
+	margin-top: 16px;
+	font-size: 14px;
+	color: #828282;
+	line-height: 14px;
+}
+.card-right-info{
+	width: 960px;
+	display: inline-block;
+	vertical-align: top;
+}
+.unit-card-name{
+	font-size: 24px;
+	color: #4A4A4A;
+	line-height: 24px;
+}
+span.strategyInfoTime {
+    font-size: 12px;
+    color: #ccc;
+    margin-left: 10px;
+}
+.unit-card-num-array span{
+	display: inline-block;
+	margin-right: 40px;
+}
+.unit-card-num-array span p{
+	width:70px;
+	text-align: center; 
+}
+.unit-card-desc{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.5em;
+	border-bottom: 1px solid #E0DEDE;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.card-desc-con-label{
+	color: #000;
+	font-weight: bold;
+}
+.card-desc-con-value{
+	color: #4a4a4a;
+}
+.unit-num{
+	font-size: 20px;
+	color: #ec0000;
+	margin-top: 20px;
+}
+.unit-num-name{
+	font-size: 12px;
+	color: #828282;
+}
+/*曲线图*/
+.curve{
+	background-color:#fff;
+	width: 1200px;
+}
+.curve-title{
+	padding: 21px 30px 11px 30px;
+	box-sizing: border-box;
+	border-bottom:1px solid #E1DFDF;
+}
+.curve-title-left,.curve-title-right{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.curve-title-left {
+    width: 956px;
+}
+.curve-title-left span{
+	font-size: 20px;
+	color: #4A4A4A;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 20px;
+}
+.curve-title-left ul{
+	display: inline-block;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+.curve-title-left ul li{
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.curve-title-left ul li.active{
+	color: #2878EA;
+}
+.curve-title-right span{
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-right:16px; 
+	box-sizing: border-box;
+
+}
+.curve-title-right .dot{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-right: 6px;
+}
+.curve-title-right .red{
+	background: #FB0D1B;
+}
+.curve-title-right .lan{
+	 background: #2C77B3;
+}
+.curve-title-right span:last-child{
+	margin-right: 0;
+}
+.curve-pictrue{
+	width: 100%;
+	height: 306px;
+}
+/*无评阅状态*/
+.no-subscription-state{
+	background-color: #fff;
+	width: 1200px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+.markedness-title{
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #ff8603;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.subscription-appreciation-info{
+	width: 390px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.subscription-info-ico,.subscription-info-con{
+	display: inline-block;
+	vertical-align: middle;
+}
+.subscription-info-ico{
+	margin-right: 40px;
+}
+.subscription-info-con-title{
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 22px;
+}
+.subscription-info-con ul li{
+	font-size: 14px;
+	color: #000;
+	line-height: 30px;
+}
+.subscription-info-con ul li:first-child {
+    margin-top: 10px;
+}
+.subscriptionButton{
+	width: 296px;
+	height: 44px;
+	background: #FF7700;
+	border-radius: 100px;
+	line-height: 44px;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	margin-top: 50px;
+	cursor: pointer;
+}
+.subscription-buttonWz{
+	font-size: 18px;
+	}
+span.subscription-button-num{
+	font-size: 20px;
+	margin-left: 5px;
+}
+.subscription-button-num i{
+	font-size: 12px;
+	margin-left: 5px;
+}
+/*过往交易*/
+.history-deal{
+	background-color: #fff;
+	width: 1200px;
+}
+.history-deal-table{
+	padding: 25px 30px;
+}
+.history-deal-title{
+	font-size: 20px;
+	color: #4A4A4A;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #E1DFDF;
+	padding-left: 30px;
+}
+.table-list-title ul,.table-list ul{
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e4e4e4;
+	border-right: 0;
+}
+.table-list-title ul li,.table-list ul li{
+	display: inline-block;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	text-align: center;
+	width: 95px;
+}
+.table-list-title ul li:nth-child(3),.table-list ul li:nth-child(3){
+	width: 189px;
+}
+.table-list-title ul{
+	font-size: 14px;
+	background-color: #eee;
+}
+.table-list-title ul li{
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+
+.table-list ul li{
+	font-size: 13px;
+	border-right: 1px solid #e4e4e4;
+	color: #4a4a4a;
+}
+.el-date-editor.el-input {
+    width: 125px !important;
+}
+
+/*修改顶部位置与用户姓名、下载样式*/
+.top-postion-user{
+	padding-top: 40px;
+}
+.top-postion-user a{
+	font-size: 14px;
+}
+.top-postion-user{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.top-postion{
+	float: left;
+	color: #828282;
+}
+.top-postion a{
+	color: #828282;
+}
+.top-postion span:last-child{
+	color: #2878EA;
+}
+.top-user{
+	float: right;
+	position: relative;
+}
+.top-user span:first-child{
+	margin-right: 30px;
+	color: #828282;
+}
+.top-user span:nth-child(2){
+	width: 63px;
+	display: inline-block;
+	color: #FF7700;
+	background-image: url('../images/strategy/iphone.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 22px;
+}
+.top-user span:nth-child(2):hover > .twoCode{
+	display: block;
+}
+.top-user span:nth-child(2) i{
+	font-style: normal;
+}
+.twoCode:hover{
+	display: block;
+}
+.twoCode{
+	width: 154px;
+	height: 189px;
+	position: absolute;
+	right: 1px;
+	top: 22px;
+	display: block;
+	z-index: 999;
+	display: none;
+}

@@ -1,0 +1,834 @@
+@charset "utf-8";
+/*public*/
+.classroom_wrapper {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.classroom_wrapper:after {
+  display: block;
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.classroom_index_public, .classroom_index_good{
+  position: relative;
+  padding-left: 149px;
+}
+.more_goodness .classroom_index_good{
+  padding: 0;
+}
+.classroom_back {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.classroom_back a {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAAXNSR0IArs4c6QAAAXNJREFUKBWdkTtLw1AUx03skKDN5uBHUARBHeLkB1AntaP0tSl0EB3cBUedTdvBDFIQRRTFTXEQEaGgg4N+hZLimsbfKd5wE0srHjg9j/+jN/caQz2iVqvNdDodP5PJrOXz+bcelHhlxt1P43neMuL7KIomqONpPD0nDBBXEJ6TI0KkJvC0WGZDfhqNxnC73T5AsCmzCsMwQnYf1DvyrFgs3lAjhUs1EI8iPoG4qAO9esSv5FapVLpVuBkEweVfxCKAN8W9XFer1d3YAMe+t6yIWjUx2cNkXXbdO+Dyduj3+YfurJH7tS2eeTIW8ParOB9jYikVp2uSL+y/2M2SLqm/TCU2EFG9XnfDMLzAZExmxEvlcvlKegmOPQfmkdMyg5/qbkOFQuHRNE0X4F0I6eD2nx3HWQB/EgwjN2EgS97607bteUiHlmU1ZadHLpcL2K+wa8GxE5+gEwf1fM4GJ9j+dYJBQoVns9kjDB7U/K/q+77zDZKGnCNwezryAAAAAElFTkSuQmCC);
+  background-position: center left;
+  padding-left: 20px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  color: #9b9b9b;
+}
+.classroom_back a.start-play {
+  background-image: none;
+  color: #9b9b9b;
+}
+.classroom_back a.start-play:hover{
+  background: none;
+}
+
+.classroom_back a.classroom_update {
+  background: url('../images/update.png') center left no-repeat;
+  background-size: 16px 15px;
+
+  color: #9b9b9b;
+}
+.classroom_back a.classroom_update:hover {
+  background-image: url("../images/update_hover.png");
+  background-size: 16px 15px;
+}
+.classroom_back a:hover {
+  color: #ff723e;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkIxRTc4QTI4NEZERDExRTc5OTU3RDAyOTMyODY1QUEzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkIxRTc4QTI5NEZERDExRTc5OTU3RDAyOTMyODY1QUEzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjFFNzhBMjY0RkREMTFFNzk5NTdEMDI5MzI4NjVBQTMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjFFNzhBMjc0RkREMTFFNzk5NTdEMDI5MzI4NjVBQTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6cJzB4AAAAnFBMVEX/cj7/c0D/2Mr/jGL/rpD/9/T/8Or/e0v/1sb/r5L/49n//Pr/fk7/kmr/g1X/rY7/+Pb/qIf/lW7/cz//m3f/8u3/4tj/eEb/7OX/pIP/597/dED/iV3/y7j/vKP/qor/fEz/wqz/kGf/dkT/h1v/il//0b//gVL/4NX/iFz/9vL/18j/wqv/vqb/1MX/xK7//f3/oH3/2cz///9VeOk5AAAANHRSTlP///////////////////////////////////////////////////////////////////8AS1ciZQAAAIBJREFUeNpcjlcOwkAMBSekEXrvEHoL3fe/G94FlCXzYVsjy8+IoTKbyBdMuQ15ueLiQSkXjwBluk2zj2j1+LEza3TI8RYqmrjM9ca164i4ryn7jU5+O6hrGCsTe6xBWfvAh6d9bHSyQsI1ByvknES2R/ES+ePeKIjquCAkfAswAGGDHKNgL3LSAAAAAElFTkSuQmCC);
+}
+/* 课程页面已付费*/
+.classroom_list_box {
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.classroom_list_box .classroom_info_video {
+  position: relative;
+  background: #000000;
+  height: 540px;
+  margin-bottom: 36px;
+}
+.classroom_list_box .classroom_list .classroom_training {
+  margin-right: 8px;
+  float: left;
+  width: 596px;
+}
+.classroom_list_box .classroom_list .classroom_system {
+  overflow: hidden;
+  width: 596px;
+}
+.classroom_list_box .classroom_list h3 {
+  background: #ffffff;
+  height: 47px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 47px;
+  color: #222;
+  padding-left: 33px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.classroom_list_box .classroom_list h3:after {
+  background: #ff723e;
+  width: 3px;
+  height: 20px;
+  float: left;
+  content: '';
+  margin-right: 9px;
+  margin-top: 13px;
+}
+.classroom_list_box .classroom_list h3 > span {
+  font-size: 18px;
+  color: #8e694b;
+  margin-right: 35px;
+  float: right;
+}
+.classroom_list_box .classroom_list .list_inner {
+  padding: 32px 33px;
+  padding-right: 7px;
+  background-color: #fff;
+}
+.classroom_list_box .classroom_list .list_inner a.pic {
+  display: block;
+  float: left;
+  width: 150px;
+  height: 90px;
+  margin-right: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.classroom_list_box .classroom_list .list_inner .info {
+  overflow: hidden;
+}
+
+.classroom_list_box .classroom_list .list_inner .info a {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  color: #8e694b;
+  margin-bottom: 26px;
+}
+.classroom_list_box .classroom_list .list_inner .info p {
+  font-size: 18px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+.chatButton{
+  width: 75px;
+    height: 30px;
+    background: #FF7700;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.classroom_list_box .classroom_list .list_inner .info p:last-child {
+  margin-bottom: 0;
+}
+.classroom_list_box .classroom_list .list_inner ul {
+  height: 544px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 25px;
+}
+.classroom_list_box .classroom_list .list_inner li {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  cursor: pointer;
+    position: relative;
+  
+}
+.classroom_list_box .classroom_list .list_inner li:last-child {
+  margin-bottom: 0;
+}
+.classroom_list_box .classroom_list .list_inner li a.pic:hover .pic_layer, .classroom_list_box .classroom_list .classroom_training .list_inner li a.pic:hover .pic_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/icon-play.png) no-repeat center;
+  color: #fff;
+  width: 150px;
+  height: 90px;
+  z-index: 10;
+}
+.classroom_list_box .classroom_list .list_inner li.live a.pic:after {
+  content: '直播中';
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: #ff6969;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 6px;
+  padding-left: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.classroom_list_box .classroom_list .list_inner li.no-start a.pic:after {
+  content: '未开始';
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: #ff6969;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 6px;
+  padding-left: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.classroom_list_box .classroom_list .list_inner li.ended a.pic:after {
+  content: '已结束';
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background-color: #ff6969;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 6px;
+  padding-left: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.classroom_list_box .classroom_list .list_inner li.live .info a + p {
+  color: #ff723e;
+}
+.classroom_list_box .classroom_list .list_inner li.play a.pic:after {
+  content: '播放中';
+  position: absolute;
+  top: 0;
+  line-height: 90px;
+  font-size: 18px;
+  text-align: center;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 150px;
+  height: 90px;
+}
+/* 公开课 播放页面*/
+.classroom_play_box {
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.classroom_play_box .classroom_play_focus {
+  margin-bottom: 8px;
+}
+.classroom_play_box .classroom_play_focus .classroom_video {
+  background: #000000;
+  width: 897px;
+  height: 540px;
+  float: left;
+  margin-right: 8px;
+  position: relative;
+}
+.classroom_play_box .classroom_play_focus .classroom_info {
+  background-color: #fff;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 19px;
+  width: 295px;
+  height: 540px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.classroom_play_box .classroom_play_focus .classroom_info h3 {
+  font-size: 24px;
+  color: #ff723e;
+  line-height: 32px;
+  margin-bottom: 11px;
+  padding-top: 11px;
+}
+.classroom_play_box .classroom_play_focus .classroom_info p {
+  font-size: 14px;
+  color: #4a4a4a;
+  letter-spacing: -0.08px;
+  line-height: 24px;
+  text-align: left;
+}
+.classroom_play_box .classroom_play_list {
+  overflow: hidden;
+  padding-left: 22px;
+  padding-top: 29px;
+  padding-bottom: 10px;
+  padding-right: 22px;
+  margin-bottom: 14px;
+  background-color: #fff;
+}
+.classroom_play_box .classroom_play_list ul {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  width: 100%;
+}
+.classroom_play_box .classroom_play_list li {
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-right: 29px;
+}
+.classroom_play_box .classroom_play_list li a.pic {
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 9px;
+}
+.classroom_play_box .classroom_play_list li.play a.pic:hover .pic_layer {
+    background: none;
+}
+.classroom_play_box .classroom_play_list li a.pic:hover .pic_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/icon-play.png) no-repeat center;
+    color: #fff;
+    width: 150px;
+    height: 90px;
+    z-index: 10;
+}
+.classroom_play_box .classroom_play_list li .info {
+  text-align: left;
+}
+.classroom_play_box .classroom_play_list li .info a {
+  color: #b9b9b9;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-overflow:ellipsis;
+	white-space:nowrap; 
+	overflow:hidden;
+	width: 150px;
+}
+.classroom_play_box .classroom_play_list li .info p span {
+  color: #b9b9b9;
+  float: right;
+}
+.classroom_play_box .classroom_play_list li .info p span:first-child {
+  float: none;
+}
+.classroom_play_box .classroom_play_list li.play a.pic:after {
+  content: '播放中';
+  position: absolute;
+  top: 0;
+  line-height: 90px;
+  font-size: 18px;
+  text-align: center;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 150px;
+  height: 90px;
+}
+.classroom_play_box .classroom_play_list li.play .info > a {
+  color: #ff723e;
+}
+.classroom_play_box .classroom_play_list a.pic:hover {
+  line-height: 0;
+}
+.classroom_play_box .classroom_play_list a.pic:hover .pic_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAwdJREFUWAnVmT9rFEEYh7NqpyJahTTCVqI2QiRRiFW62JqvoE0QsbXURkXSCOo3kGCKYL5AFI0o2IhlxObOKrGIlYb1+a07w26yd9nZmV13X/jd7M3O+86zc3Pzb6MJD0uSJMJ9Bi2gGE3llHA9RINMW6Tr6EMURbrXngE6j56jIXI1+ch3vnFiKplFGyiUKdZscHCCxuhVKMqSOIqtLuVvBNLPv11SSegs1eHXTQiwhP6EJhsTT3Ut1WpmHJfHBG761rITtJ6yaaIK8au1NIHUZ9vsBqPYxXCgT2vgt0YB/VM/odM28/9e7FD9NBONJp3UjpiLLH1E2hVYIYlFTNZsC9O6GsDf2zvdurhCK28KKd/CD7vFWKCxbClw1rnnCkWqf/lG0ZPoAfpd3c2p5Jz5A5oWXnRyLxbe5ufaRffIvoTeFW8H+3YjjQR5hOqsunBLTaOKNXIU7xb6md4N9yHGSC2s9eykrdHzgpZO0DPCnEMrnuHy7mKcEbAW38EN6B9IXe06+h6oggUBx4GClYYBWruMC+gJ2istVD0zFrC2NY0a0L/QXSq5jAp93rHiqVaADRTQn7nWBHUH7Zp8h7RdYIEBvYe0fDyPvijPwVLgdnewDnQlRRN1CW3FWzPG0qPoNhV+RRcdKx4KWOcGrRigmgm1iFGXOFGj0kErwIAeR48B/Iima4Aal8Exruzi2OSGTAHVxPQUnQ0Qd0strIE9uAE6iV4S+DUKASvG9QmCNrH4uUncZhY/jIka1taE72tAagp+i7T4OeUbb5//mljVJWQr/5Jan2cA1Z/qPt6aya7WinK4U8qY39Nt4FN313F4dX4l3tC61xQiD6w5vj+bUJ5AA/qqnqJjtpqxpVi2hfWNfhiTaPmn84Au2A4Qow9SeBJNItol+C60QzysGBYzpvHxaOn+HAaaRwG6P8etOej+HGjnoPvzyiAH3Z+XMgZaKf26H6+98tAZuLrJC1TniEs+8j1wur6/nrLvhYmjrMC4PCqV/6hXt3I1r22VaozX2tvr1e1fECEyqHnNC/gAAAAASUVORK5CYII=) no-repeat center;
+  color: #fff;
+  width: 150px;
+  height: 90px;
+  z-index: 10;
+}
+.classroom_play_box .classroom_tip {
+  background-color: #fff;
+}
+.classroom_play_box .classroom_tip .classroom_tip_warn {
+  float: left;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,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);
+  background-position: left center;
+  margin-left: 42px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 27px;
+  margin-bottom: 28px;
+  padding-right: 31px;
+  margin-right: 28px;
+  border-right: 1px solid #eee;
+}
+.classroom_play_box .classroom_tip .classroom_tip_warn p {
+  color: #fd3f3e;
+  line-height: 22px;
+}
+.classroom_play_box .classroom_tip .classroom_tip_state {
+  padding-top: 17px;
+  color: #4a4a4a;
+  line-height: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+.classroom_play_box .classroom_tip .classroom_tip_state p {
+  max-width: 880px;
+}
+.classroom_play_box .classroom_tip .classroom_tip_state p:first-child {
+  margin-bottom: 3px;
+}
+/* 课程页面未付费*/
+.classroom_intro_box {
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.classroom_intro_box .classroom_intro_focus {
+  margin-bottom: 35px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_video {
+  background: #000000;
+  width: 896px;
+  height: 540px;
+  float: left;
+  margin-right: 8px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info {
+  overflow: hidden;
+  padding-top: 70px;
+  text-align: center;
+  width: 295px;
+  height: 540px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_video img{
+  width: 100%;
+  height: 100%;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info h3 {
+  font-size: 26px;
+  color: #4a4a4a;
+  letter-spacing: -0.63px;
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info h3 + p {
+  font-size: 24px;
+  color: #ff723e;
+  margin-bottom: 60px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info em {
+  font-size: 24px;
+  color: #ff723e;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info em span {
+  font-size: 14px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info em + p {
+  font-size: 15px;
+  color: #9b9b9b;
+  margin-bottom: 63px;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info em + p span {
+  color: #333;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info input {
+  display: inline-block;
+  border-radius: 21px;
+  line-height: 41px;
+  border: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  width: 143px;
+  height: 41px;
+  background-color: #ff723e;
+  cursor: pointer;
+}
+.classroom_intro_box .classroom_intro_focus .classroom_info input.disabled {
+  color: #999;
+  background-color: #EEEEEE;
+  cursor: default;
+}
+.classroom_intro_box .classroom_detail > div {
+  background-color: #fff;
+}
+.classroom_intro_box .classroom_detail > div h3 {
+  background: #ffffff;
+  height: 47px;
+  font-size: 20px;
+  line-height: 47px;
+  color: #222;
+  padding-left: 33px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 12px;
+}
+.classroom_intro_box .classroom_detail > div h3:after {
+  background: #ff723e;
+  width: 3px;
+  height: 20px;
+  float: left;
+  content: '';
+  margin-right: 9px;
+  margin-top: 13px;
+}
+.classroom_intro_box .classroom_detail > div dl {
+  border-bottom: 1px solid #eee;
+  margin-left: 32px;
+  margin-right: 32px;
+  overflow: hidden;
+  line-height: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.classroom_intro_box .classroom_detail > div dl.wrap dt {
+  float: none;
+  margin-bottom: 20px;
+}
+.classroom_intro_box .classroom_detail > div dl.wrap dd {
+  line-height: 24px;
+}
+.classroom_intro_box .classroom_detail > div dl .khaki {
+  color: #8e694b;
+}
+.classroom_intro_box .classroom_detail > div dl:last-child {
+  border-bottom-color: #fff;
+}
+.classroom_intro_box .classroom_detail > div dt {
+  color: #ff723e;
+  font-size: 18px;
+  float: left;
+}
+.classroom_intro_box .classroom_detail > div dt span.khaki {
+  float: right;
+}
+.classroom_intro_box .classroom_detail > div dd {
+  overflow: hidden;
+  font-size: 16px;
+}
+.classroom_intro_box .classroom_detail > div dd p {
+  line-height: 16px;
+  margin-bottom: 21px;
+}
+.classroom_intro_box .classroom_detail > div dd p:last-child {
+  margin-bottom: 10px;
+}
+.classroom_intro_box .classroom_detail .classroom_detail_intro {
+  width: 669px;
+  float: left;
+  margin-right: 8px;
+  padding-bottom: 80px;
+  height: 600px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.classroom_intro_box .classroom_detail .classroom_detail_list {
+  width: 523px;
+  height: 600px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+/* 课程页面首页*/
+.classroom_index_box {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.classroom_index_box .classroom_index_public {
+  margin-bottom: 21px;
+}
+.classroom_index_box .classroom_index_public .class_name {
+  width: 149px;
+  height: 320px;
+  background-image: url(../images/class_bg_2.png);
+}
+.classroom_index_box .classroom_index_public .class_name:after {
+  content: '';
+  width: 112px;
+  height: 112px;
+  background-image: url(../images/class_bg_2_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.classroom_index_box .classroom_index_public .class_list p.name {
+  font-size: 18px;
+  color: #7e57c2;
+  line-height: 92px;
+  padding-left: 10px;
+  border: 1px solid #e1dfdf;
+  border-top: none;
+}
+.classroom_index_box .classroom_index_good .class_name {
+  width: 149px;
+  background-image: url(../images/class_bg.png);
+}
+.classroom_index_box .classroom_index_good .class_name:after {
+  content: '';
+  width: 112px;
+  height: 76px;
+  background-image: url(../images/class_bg_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.classroom_index_box .classroom_index_good .class_list .about {
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 17px;
+  border: 1px solid #e1dfdf;
+  border-top: none;
+  padding-bottom: 17px;
+  color: #8e694b;
+}
+.classroom_index_box .classroom_index_good .class_list .about .right{
+  float: right;
+  margin-top: 3px;
+  font-size:12px;
+  line-height: 18px;
+  color: #ff723e;
+  border: 1px solid #ff723e;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+.classroom_index_box .classroom_index_good .class_list .about p {
+  line-height: 26px;
+  font-size: 18px;
+}
+.classroom_index_box .classroom_index_good .class_list .about p.opt {
+  line-height: 15px;
+  height: 18px;
+  margin-top: 20px;
+}
+.classroom_index_box .classroom_index_good .class_list .about span {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 12px;
+}
+.classroom_index_box .classroom_index_good .class_list .about span.cost {
+  font-size: 16px;
+  color: #ff723e;
+  float: right;
+}
+.classroom_index_box .classroom_index_good .class_list .about span.cost em {
+  font-size: 12px;
+}
+.classroom_index_box .classroom_index_good .class_list .about span.buy:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATtJREFUOBGFkjFLw1AUhfuShxJREAp1cSlFcPI/JIv4C+zSUegidOssdO7QrUP/gYOuISFzwEE6OLkJQsGhBEmhJI3nBgKPd6+k8Mi7533n5Ob2qc4/vzRNu1mW9ehYa/3l+/6vhDqSGEXREuYfnH3QKopiE8fxVGJZAMwXAB8s+KSqqntLq0sWoJQaAFYCfCxoHRYA81YCoYk6C0AHp1IAgq+lzlgAzIUUgOAz6IxnQhAE74BfhJAZ9NLWWQCgA9arCaKusFam1uxZAB04jvNGpgbCt396nrdravPJApIkuSzLcmEN7CrP8znuSNc0077+vwnGTbvF8xFvvrPMpmeP4tl13QVmldYBYRiOYHpC0TfJtj08azBjje+lds/bDPY5PDfQJjQD8YraBqlGF0fUwRBD0xLQpmEW338Uo2jioCPFdwAAAABJRU5ErkJggg==) no-repeat center #fff;
+  float: left;
+  margin-right: 5px;
+}
+.classroom_index_box .classroom_index_class .class_name {
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+}
+.classroom_index_box .classroom_index_class .class_name h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 30px;
+  margin-bottom: 5px;
+}
+.classroom_index_box .classroom_index_class .class_name a {
+  font-size: 18px;
+  color: #fff;
+}
+.classroom_index_box .classroom_index_class .class_list {
+  overflow: hidden;
+  padding-left: 30px;
+  border: 1px solid #e1dfdf;
+  background-color: #fff;
+  padding-top: 18px;
+  min-height:320px;
+}
+.classroom_index_box .classroom_index_class .class_list li {
+  background: #4a4a4a;
+  width: 311px;
+  float: left;
+  margin-left: 31px;
+  margin-bottom: 20px;
+}
+
+.more_goodness.classroom_index_box .classroom_index_class .class_list li{
+  width: 360px;
+}
+
+.more_goodness .classroom_back h3{
+  display: inline-block;
+  float: left;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FF7700;
+}
+
+.more_goodness .classroom_back a{
+  line-height: 30px;
+}
+
+.more_goodness.classroom_index_box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  padding: 0;
+  overflow: hidden;
+}
+.more_goodness.classroom_index_box .class_list{
+  width:1200px;
+  margin:0 auto;
+}
+.more_goodness.classroom_index_box .classroom_back{
+  margin-top: 30px;
+}
+.more_goodness .classroom_index_good{
+  position: absolute;
+  top:100px;
+  bottom: 0;
+  left: 0;
+  right:0;
+  overflow-y: auto;
+  width:100%;
+}
+.more_goodness.classroom_index_box .classroom_index_class .class_list{border: none}
+
+.classroom_index_box .classroom_index_class .class_list li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.classroom_index_box .classroom_index_class .class_list li > a {
+  display: block;
+  background-color: #fff;
+}
+.classroom_index_box .classroom_index_class .class_list div.pic {
+  line-height: 0;
+  height: 187px;
+}
+
+.classroom_index_box .classroom_index_class .class_list div.pic img{
+  width:100%;
+  height: 100%;
+}
+
+.classroom_wrapper .pause{
+  background: url(/assets/images/pause.png) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 54px;
+  width: 100%;
+  z-index: 10001;
+  cursor: pointer;
+}
+.classroom_wrapper .end, .classroom_wrapper .unstart{
+  background-color: #2c3237;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10001;
+  text-align: center;
+}
+.classroom_wrapper .end div{
+  background: url(/assets/images/ended.png) center center no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.classroom_wrapper .unstart div{
+  background: url(/assets/images/unstart.png) center center no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/*课程金股*/
+.courseGoldStock{ width: 1200px; margin:0 auto 15px auto; background: #fff; padding-bottom: 10px; }
+.classRoomHeader{ height: 46px; font-size: 18px; color: #222222; padding: 13px 20px; box-sizing: border-box; background: #fff; border-bottom: solid 1px #f2f2f2;}
+.classRoomHeader .classRoomTitle{ display: block; float: left; border-left: solid 2px #FF723E; padding-left: 10px; line-height: 1;}
+.classRoomHeader .classRoomTime{ display: block; float: right; font-size: 16px; color: #8E694B; line-height: 1;}
+.courseGoldWrap{ margin: 40px 30px 10px 30px; overflow-x: auto;}
+.courseGoldWrapScroll{  height: 252px;}
+.courseGoldPanel{background: #FFEDCE; border-radius: 5px; width: 612px; height: 238px; float: left; margin-right: 10px;}
+.courseGoldPanel .curseGoldName{ height: 55px; line-height: 55px; padding: 0 30px;font-size: 20px; color: #8E694B;}
+.courseGoldPanel .curseGoldInterval{ height: 70px; padding: 22px 30px;font-size: 18px; color: #FFAB3D; box-sizing: border-box; background: #FFEDBF;}
+.courseGoldPanel .curseGoldInterval > span{ float: left; width: 27%}
+.courseGoldPanel .curseGoldInterval > span:first-child{ width: 46%;}
+.courseGoldPanel .curseGoldInterval > span em{ display: inline-block; font-size: 18px; color: #8E694B; padding-left: 10px;}
+.curseGoldDescribe{ font-size: 16px; color: #8E694B; padding: 10px 30px; line-height: 1.5;}
+/*roomListChat*/
+.chatRoomSection{ width: 1200px; margin:  auto;margin-bottom: 55px;}
+.roomList{ width: 1200px; border:solid 1px #e0dede; background: #fff; margin: 0 auto; margin-bottom: 15px;}
+.privateStringHeader{ border-bottom:solid 1px #e0dede; height: 45px; padding: 0 25px; line-height: 45px;}
+.privateStringTitle{ display: block; float: left; font-size: 14px; color: #FF6600;}
+.Participants{ display: block; float: right;font-size: 12px;color: #FF423D;}
+.roomListClosed{ display: block;float: right; width: 25px; font-size: 20px; color: #979797; text-decoration: none; text-align: right;}
+.privateStringContent{ width: 1190px;  height: 500px; margin: 10px auto;  overflow-y: auto;}
+.privateStringUl{ width: 1040px; margin: 0 auto;}
+.privateStringContent li{position: relative; margin-bottom: 38px;}
+.privateStringContent li .chatterTop{ margin-bottom: 10px;}
+.privateStringContent li .sendtime{font-size: 12px;  color: #888888;}
+.privateStringContent li .chatterName{font-size: 12px; color: #4A4A4A;}
+.privateStringContent li .chatterMessageImg{ width: 240px; max-width: 450px;}
+.privateStringContent li.rightSideChat .chatterFace{ width: 40px; height: 40px; border-radius: 50%; position: absolute; right: -50px; top: 0; background: #dddddd; overflow: hidden;}
+.chatterFace img {
+    width: 100%;
+}
+.privateStringContent li.rightSideChat .chatterTop{ overflow: hidden;}
+.privateStringContent li.rightSideChat span{ display: inline-block; margin-left: 10px; float: right; }
+.privateStringContent li.rightSideChat .chatterIdentity{font-size: 11px; color: #FFFFFF; background: #FF423D; border-radius: 15px; padding: 0 5px;}
+.privateStringContent li.rightSideChat .chatterMessage p{background: rgba(255,119,0,0.10); border: 1px solid #FFC490; border-radius: 5px; line-height: 1.5; font-size: 14px; color: #222222; padding: 10px; display: inline-block; min-width: 150px;float: right;}
+
+.privateStringContent li.leftSideChat .chatterFace{ width: 40px; height: 40px; border-radius: 50%; position: absolute; left: -50px; top: 0; background: #dddddd;}
+.privateStringContent li.leftSideChat span{ display: inline-block; margin-right: 10px; }
+.privateStringContent li.leftSideChat .chatterIdentity{font-size: 11px; color: #FFFFFF; background: #FF7700; border-radius: 15px; padding: 0 5px;}
+.privateStringContent li.leftSideChat .chatterMessage p{background: rgba(255,255,255,0.10); border: 1px solid #E1DFDF; border-radius: 5px; line-height: 1.5; ont-size: 14px; color: #222222; padding: 10px; display: inline-block; min-width: 150px;}
+
+.SendChatBox{ width: 1200px; height: 220px; background: #fff; margin: 0 auto;    position: relative; bottom: 0; left: 0;}
+.SendChatContentTop{ height: 44px; border-bottom:1px solid #D8D8D8;}
+.SendChatContentTop > span{ display: inline-block; margin: 8px 0 0 10px; cursor: pointer;}
+.SendChatContent{ position: relative;}
+.SendChatContentTextarea{ width: 1045px; height: 170px; padding: 32px; box-sizing: border-box; font-size: 14px;  color: #9B9B9B; line-height: 1.5;border: none; outline: none;}
+.SendChatContent .sendBtn{display:block; position:absolute; right:30px; top: 58px;  background: #FF7700; border-radius: 100px; width: 117px; height: 50px; line-height: 50px; font-size: 20px; color: #FFFFFF; text-decoration: none; text-align: center;}
+.SendChatContent .remainingWords{display:block; position:absolute; right:30px; top: 140px; font-size: 14px; color: #9B9B9B;}

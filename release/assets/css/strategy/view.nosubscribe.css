@@ -1,0 +1,224 @@
+
+body {
+    background-color: #F2F2F2;
+    padding: 0 90px;
+    box-sizing: border-box;
+}
+
+#subscribe {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*我的订阅-s*/
+.my_sub {
+    width: 830px;
+    padding-bottom: 26px;
+    background-color: #FFFFFF;
+    float: left;
+    margin-right: 18px;
+}
+
+.my_sub_h3 {
+    font-size: 20px;
+    color: #4A4A4A;
+    letter-spacing: -0.6px;
+    border-bottom: 1px solid #E1DFDF;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 30px;
+}
+
+.my_sub_box {
+    margin: 30px;
+    padding-bottom: 17px; 
+    border-bottom: 1px dashed #E1DFDF;
+}
+
+.my_sub_box:last-child{
+    border:none;
+}
+
+.my_sub_box_left {
+    float: left;
+}
+
+.my_sub_tit {
+    font-size: 20px;
+    color: #4A4A4A;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.my_sub_tit a{
+    display: inline-block;
+    font-size: 16px;
+    color: #4A4A4A;
+<<<<<<< HEAD
+    margin-right: 4px;
+    width: 230px;
+    font-weight: bold;
+}
+
+.my_sub_box_left ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.my_sub_box_left li {
+    float: left;
+    text-align: center;
+    width: 70px;
+    margin-right: 80px;
+}
+
+.my_sub_box_left li .ratio {
+    font-size: 20px;
+    letter-spacing: -0.43px;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+
+.my_sub_box_left li .my_sub_rise {
+    color: #EC0000;
+}
+
+.my_sub_box_left li .my_sub_desc {
+    color: #129206;
+}
+
+.my_sub_box_left li .my_sub_info {
+    font-size: 12px;
+    color: #828282;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+
+.my_sub_line {
+    float: left;
+    width: 2px;
+    height: 40px;
+    background-color: #E0DEDE;
+    margin: 20px 40px 0 15px;
+}
+.my_sub_time{
+	font-size: 12px;
+	color: #9B9B9B;
+	line-height: 12px;
+	margin-left: 11px;
+}
+
+.my_sub_right {
+    float: left;
+    padding-top: 18px;
+}
+
+.my_sub_renew {
+    width: 93px;
+    height: 24px;
+    background: #FF7700;
+    cursor: pointer;
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+}
+
+.my_sub_timer {
+    font-size: 13px;
+    color: #9B9B9B;
+    margin-top: 8px;
+}
+
+.my_sub_more {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(../../images/strategy/index/view-detail.png) no-repeat center;
+    background-size: 30px 30px;
+}
+
+.my_sub hr {
+    width: 790px;
+    height: 0;
+    border-top: 1px dashed #E1DFDF;
+    margin: 0;
+}
+
+/*我的订阅-e*/
+/*我的订阅－未订阅-s*/
+.notSub {
+    margin-left: 374px;
+    position: relative;
+}
+
+.notSub::before {
+    content: "";
+    width: 135px;
+    height: 167px;
+    position: absolute;
+    left: -213px;
+    top: -13px;
+    background: url(../../images/strategy/index/cattle.png) no-repeat;
+}
+
+.notSub_tit {
+    font-size: 30px;
+    color: #828282;
+    letter-spacing: -0.9px;
+    margin: 56px 0 10px 0;
+}
+
+.notSub_p {
+    font-size: 14px;
+    color: #828282;
+    line-height: 22px;
+    width: 182px;
+}
+
+.notSub_p a {
+    color: #FF8B25;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*我的订阅-未定阅-e*/
+/*我的订阅-策略动态暂无-s*/
+.notDynamic {
+    float: right;
+    width: 350px;
+    background: #FFFFFF;
+}
+
+.notDynamic_tit {
+    font-size: 20px;
+    color: #4A4A4A;
+    letter-spacing: -0.6px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 25px;
+    border-bottom: 1px solid #E1DFDF;
+}
+
+.notDynamic_img {
+    position: relative;
+    font-size: 20px;
+    color: #D6D6D6;
+    text-align: center;
+    margin: 223px 0 55px 0;
+}
+
+.notDynamic_img::before {
+    content: "";
+    position: absolute;
+    top: -170px;
+    left: 70px;
+    width: 204px;
+    height: 152px;
+    background: url(../../images/strategy/index/no-data-illustration.png) no-repeat;
+}
+/*我的订阅-策略动态暂无-e*/

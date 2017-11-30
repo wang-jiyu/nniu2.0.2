@@ -1,0 +1,44 @@
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.date {
+    font-size: 14px;
+    height: 14px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.flo {
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.rg {
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 35px;
+}
+
+.dot.top {
+    background: #2C77B3;
+}
+
+.dot.bottom {
+    background: #FB0D1B;
+}
