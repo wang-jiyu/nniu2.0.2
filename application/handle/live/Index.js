@@ -165,7 +165,7 @@ module.exports = {
 	getGoldStockList: function (id,adviserID, callback) {
 		Forms.get({
 			api: Config.SITE_URL.ADVISOR,
-			uri: '/api/course/golden/stocks/'+adviserID+'/list?golden_stock_guid=' + id,
+			uri: '/api/course/golden/stocks/'+adviserID+'/list?golden_stock_guid=' + id + "&limit=10000&page=1",
 			callback: callback
 		});
 	},
@@ -264,6 +264,25 @@ module.exports = {
 			callback: callback
 		});
 	},
+
+    //审核消息列表
+    getCheckMessageList: function(roomId, refId, limit, page, checkType, callback) {
+        Forms.get({
+            api: Config.SITE_URL.ADVISOR,
+            uri: '/api/weblive/check/messages/' + roomId + "?ref_id=" + refId + "&limit=" + limit + "&page=" + page + "&check_type=" + checkType,
+            callback: callback
+        });
+    },
+
+    //处理审核消息
+    handleCheckMessage: function(params,callback) {
+        Forms.post({
+            api:Config.SITE_URL.ADVISOR,
+            uri:'/api/weblive/check/message/handle',
+            params:params,
+            callback:callback
+        });
+    },
 
 	//消息列表
 	getMessageListII: function (roomId, params, callback) {

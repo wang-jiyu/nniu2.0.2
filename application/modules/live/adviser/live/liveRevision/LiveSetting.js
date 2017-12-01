@@ -86,6 +86,7 @@ module.exports = React.createClass({
         }
     },
     onSettingOk: function (value) {
+        this.setLiveType(this.state.liveType);
         var isVip = this.props.isVip;
         if (isVip) {
             Config.CACHE_DATA.TAB_TYPE =1;
@@ -142,7 +143,7 @@ module.exports = React.createClass({
         } else {
             type = -1;
         }
-        this.setLiveType(type);
+        /*this.setLiveType(type);*/
         this.setState({liveType: type})
     },
 
