@@ -15,7 +15,8 @@
     "simple-hotkeys": "^1.0.3",
     "simple-module": "^2.0.6",
     "simple-uploader": "^2.0.8",
-    "socket.io-client": "^1.4.5"
+    "socket.io-client": "^1.4.5",
+    "webpack": "^2.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
