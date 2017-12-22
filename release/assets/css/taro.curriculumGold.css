@@ -1,4 +1,6 @@
 .main{width:1198px;margin: 0 auto;padding:26px 0 0px;background-color: #F2F2F2;position:relative;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
 /*右侧按钮栏*/
 .curr-sidebar{position:absolute;top: 29px;right: -36px;width:36px;height:36px;}
 .curr-sidebar div{width:36px;height:36px;background: #1E2124;font-family: MicrosoftYaHei;font-size: 12px;color: #F2F3F6;text-align: center;cursor: pointer;}
@@ -36,30 +38,50 @@
 .curr-goldshares-list{float:left;/*width:935px;*/width:869px;background-color: #FFFFFF;}
 .curr-goldshares-createbtnbox{height:50px;position:relative;}
 .curr-goldshares-createbtnbox .curr-goldshares-create-btn{position:absolute;top:12px;right:60px;width:90px;height:30px;line-height: 30px;text-align:center; background: linear-gradient(to bottom, #FF9020 0%,#FF521D 100%);border-radius:100px;color:#ffffff;cursor: pointer;}
-.curr-goldshares-item-box{min-height:525px;}
+.curr-goldshares-item-box{max-height: 972px;overflow: auto;}
 .curr-goldshares-item{border-top:2px solid #F2F2F2;padding:34px 30px 30px;}
 .curr-goldshares-title{position:relative;width:100%;height:26px;}
 .curr-goldshares-code{font-family: MicrosoftYaHei;font-size: 20px;color: #3C3C3C;}
 .curr-goldshares-time{font-family: MicrosoftYaHei;font-size: 12px;color: #999999;margin-left:30px;}
 .curr-goldshares-edit{font-family: MicrosoftYaHei;font-size: 16px;color: #3C3C3C;position:absolute;right:0;top:0;cursor: pointer;}
+.curr-goldshares-status{font-family: MicrosoftYaHei;font-size: 16px;color: #3C3C3C;position:absolute;right:55px;top:0;cursor: pointer;}
+.curr-goldshares-status2{font-family: MicrosoftYaHei;font-size: 16px;color: #fff;position: absolute;right: 111px;top: 0;display: inline-block;width: 66px;height: 26px;text-align: center;border-radius: 12px;line-height: 26px;}
 .curr-goldshares-index{margin-top:18px;}
 .curr-goldshares-ul li{margin-right:67px; float:left;width:72px;text-align:center;}
 .curr-goldshares-li-value{margin-bottom:10px;}
 .curr-goldshares-li-value,.curr-goldshares-li-text{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;line-height: 18px;}
 .curr-goldshares-info{font-family: MicrosoftYaHei; font-size: 14px;color: #3C3C3C; line-height: 18px;margin-top:10px;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none!important;
+}
+input[type="number"]{-moz-appearance: textfield}
 /*新建金股*/
-.curr-goldshares-create{float:left;width:869px;height:575px;background-color: #FFFFFF;padding:30px 0 0 30px;}
+.curr-goldshares-create{float:left;width:869px;background-color: #FFFFFF;padding:30px 0 30px 30px;}
 .curr-goldshares-create-tit{font-family: MicrosoftYaHei;font-size: 20px;color: #3C3C3C;margin-bottom:40px;}
 .curr-goldshares-create span{font-family: MicrosoftYaHei;font-size: 15px;color: #3C3C3C;}
 .curr-goldshares-create-input{width:160px;height:32px;line-height: 32px;padding-left:20px;font-size: 12px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;margin:0 0px 0 35px;}
+.curr-goldshares-create-input2{width:160px;height:32px;line-height: 32px;padding-left:20px;font-size: 12px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;margin:0 0px 0 58px;}
 .curr-goldshares-create-code{margin-left:60px;}
 .curr-goldshares-create-tr2{margin:30px 0;}
 .curr-goldshares-create-yuan{margin:0 25px 0 20px;}
+.curr-goldshares-create span.curr-goldshares-create-hint{font-size:12px; color:#b1b1b1}
 .curr-goldshares-create-line{width:72px;height:1px;background-color: #000000;display: inline-block;position: relative;top: -7px;}
-.curr-goldshares-create-tr4{margin:30px 0 40px;}
+.curr-goldshares-create-tr4{margin:30px 0 40px;max-height: 850px;overflow-y: auto;}
+.curr-goldshares-create-tr4:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .curr-goldshares-create-tr4 textarea{width:490px;height:80px;vertical-align: text-top;margin-left:35px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;resize:none;padding:10px 20px;}
-.curr-goldshares-create-save{background: #FAFAFA; border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei; font-size: 15px;color: #999999;;width:160px;height:40px;line-height: 40px;cursor:pointer;margin:0 40px 0 110px;}
+.curr-goldshares-create-save{background: #FAFAFA; border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei; font-size: 15px;color: #999999;width:160px;height:40px;line-height: 40px;cursor:pointer;margin:0 40px 0 110px;}
 .curr-goldshares-create-cancel{background: #FAFAFA; border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei; font-size: 15px;color: #999999;width:160px;height:40px;line-height: 40px;cursor:pointer;}
+.curr-goldshares-create-add{float:right;background: #ff6600; border: none;border-radius: 6px;font-family: MicrosoftYaHei;font-size: 13px;color: #FFF;width:86px;height:32px;line-height: 32px; margin:0 70px; cursor:pointer;}
+.addReasonMask{width:100%;height:100%;background: rgba(255,255,255,0.8);position:absolute; bottom:0; left:0; z-index:999;display:none}
+.addReasonBox{width: 564px; height: 288px; margin: 79px auto; border: 1px solid #b1b1b1; background: #fff;}
+.inputArea{display: block;width: 500px;height: 184px;margin: 18px auto;}
+.appendReason{width: 492px;float: left;margin: 0 10px 10px 36px;position:relative}
+.appendReason .notDelete{width: 145px;height: 36px;background: #000;border-radius: 4px;color: #fff;text-align: center;line-height: 36px;position: absolute;top: 47px;right:-174px;display:none}
+.appendReason ul li{padding: 5px 0; border: 1px solid #c8c8c8; border-bottom: none;overflow:hidden;zoom:1}
+.appendReason ul li:last-child{border-bottom:1px solid #c8c8c8}
+.appendReason ul li p{float:left;width:392px;padding:0 10px;line-height:32px;word-wrap:break-word}
+.appendReason ul li button{float: right;margin-right:6px;background: #FAFAFA;border: 1px solid #C8C8C8;border-radius: 2px;font-family: MicrosoftYaHei;font-size: 13px;color: #3C3C3C;width: 86px;height: 32px;line-height: 32px;cursor: pointer;}
 /*常见问题*/
 .curr-problem{float:right;width:328px;height:575.3px;margin-left:2px;background-color: #FFFFFF;padding:30px 20px 0;box-sizing: border-box;}
 .curr-problem-header{font-family: MicrosoftYaHei;font-size: 18px;color: #3C3C3C;}
@@ -107,7 +129,7 @@
 .curr-chat-send-top-face img{display: block;width:100%;height:100%;}
 .curr-chat-send-top-pic{width:26px;height: 23px;display: inline-block;cursor: pointer;}
 .curr-chat-send-top-pic img{display:block;width:100%;height:100%;}
-.curr-chat-textarea{width:100%;    height:190px;}
+.curr-chat-textarea{width:100%;height:190px;}
 .curr-chat-textarea textarea{width:100%;height:190px;resize: none;border:none;padding:20px 30px;}
 .curr-chat-sendbtn{height:50px;background: #FFFFFF;border-radius: 0 0 2px 2px;border:1px solid #F2F2F2;}
 .curr-chat-setting{background: url("../images/live/liveSetting.png") no-repeat;background-size: 26px 26px;width:70px;cursor:pointer;text-align: center;float:right;background-position: left center;  height: 50px;line-height: 50px;padding-left: 40px;}
