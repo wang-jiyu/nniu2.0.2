@@ -147,7 +147,7 @@ module.exports = React.createClass({
         UserOrderHandle.payoffOrder(this.state.source.order_id, params, function(result) {
             if (result.code == 200) {
                 this.paySuccess({type:'offline'});
-            } else if (result.code == 40021 || result.code == 40004) {
+            } else if (result.code == 40021 || result.code == 40004 ||result.code == 41032) {
                 return this.setState({
                     error: '银行卡号不正确'
                 }, function() {
