@@ -1,4 +1,4 @@
-var DateTimeInput = require(('amazeui-react')).DateTimeInput;
+var DateTimeInput = require('date-pick').DateTimeInput;
 var CalendarHandle = require('../../../handle/calendar/Index');
 var Loading = require('../../../components/common/Loading');
 var Reload = require('../../../components/common/Reload');

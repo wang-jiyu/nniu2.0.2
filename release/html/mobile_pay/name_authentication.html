@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<script src="../../assets/lib/flexible.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/taro.base.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/taro.component.css" />
+		<link rel="stylesheet" href="../../assets/css/tool/mobilepay.css">
+	</head>
+
+	<body>
+			<div class="authentication">
+				<div class="content">
+					<p>应监管部门要求和对您合法权益的保障，请在购买产品前进行实名认证和风险测评。</p>
+					<p>如有问题请致电客服热线：<a>010-53806061</a></p>
+				</div>
+				<div class="authentication_input">
+					<h3>请务必输入与付款银行账户名一致的实名信息！</h3>
+					<input type="text" name="name" placeholder="请输入您的姓名" />
+					<input type="text" name="idcard" placeholder="请输入您的身份证号码"  />
+				</div>
+				<div class="mobile_agreement clearfix">
+					<label class="mobile_checkbox agree_radio">
+		                <input type="checkbox" name="agreement" value="" />
+		                <i></i>
+		            </label>
+						<div class="agreement_text">我已阅读并确认
+							<a>《身份信息核验授权书》</a>
+							
+						</div>
+				</div>
+				<div class="tips">
+					<div class="error">身份证姓名与号码不符(剩余4次验证机会)</div>
+					<div class="agree_button">我已阅读并同意</div>
+				</div>
+				
+			</div>
+			
+			<div class="authentication" style="display: none;">
+				<div class="content">
+					<dl>
+						<dt>身份信息核验授权书</dt>
+						<dd>
+							4.1 希财网是一个开放平台，用户4.1 希财网是一个开放平台，用户4.1 希财网是一个开放平台，用户
+						</dd>
+					</dl>
+				</div>
+				<div class="agree_button">我已阅读并同意</div>
+			</div>
+			
+	</body>
+
+</html>

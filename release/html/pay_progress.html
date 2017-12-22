@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="Renderer" content="webkit" />
+    <meta name="Viewport" content="width=1280" />
+    <meta name="Robots" content="none" />
+    <title>haina.nniu</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/taro.base.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/taro.component.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/tool/order.css" />
+</head>
+<body>
+<div class="user_order_box">
+    <div class="order_progress">
+        <div class="progress_box">
+            <div class="selected">
+                <span>订单确认</span>
+            </div>
+            <div class="selected">
+                <span>在线支付</span>
+            </div>
+            <div>
+                <span>订购完成</span>
+            </div>
+        </div>
+    </div>
+    <div class="dialog_wrap">
+        <div class="dialog_box" style="left:50px; margin:auto 0;">
+            <div class="dialog_title">
+                <h1>正在支付</h1>
+                <a href="javascript">x</a>
+            </div>
+            <div class="dialog_content">
+                <p>请在新打开的页面完成支付，支付完成前，请不要关闭窗口。请在24小时内支付，超时订单将自动取消。</p>
+                <input type="button" value="支付完成" />
+                <input type="button" value="支付遇到问题" class="dark_blue"  />
+            </div>
+        </div>
+        <div class="dialog_box" style="height:464px; margin:auto 0; left:50%;">
+            <div class="dialog_title">
+                <h1>支付遇到问题了？</h1>
+                <a href="javascript">x</a>
+            </div>
+            <div class="dialog_content">
+                <div>
+                    <p>支付完成前，请不要关闭窗口</p>
+                    <p>请在24小时内支付，超时订单将自动取消</p>
+                    <p>可能是以下原因导致您支付失败，您可以对照进行排查</p>
+                    <p>您取消了支付，导致支付未能成功</p>
+                    <p>提示“过期，超时，错误”等问题时，您可以重新进行支付</p>
+                    <p>交易有支付上限，建议您登录网上银行提高最高上限额度</p>
+                    <p>支付遇到问题？联系客服获得帮助</p>
+                </div>
+                <input type="submit" value="重新支付" />
+                <input type="button" value="取消" class="dark_blue"  />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -4,7 +4,7 @@ var UserCenterHandle = require('../../../handle/usercenter/UserCenter');
 var UserMobile = require('../usersecurity/UserMobile');
 var UserEmail = require('../usersecurity/UserEmail');
 
-var DataPick = require(('amazeui-react'));
+var DataPick = require('date-pick');
 var DateTimeInput = DataPick.DateTimeInput;
 
 module.exports = React.createClass({
