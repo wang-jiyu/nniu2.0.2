@@ -1,6 +1,6 @@
 var LiveHandle = require('../../../../handle/live/Index');
 
-var DataPick = require('date-pick');
+var DataPick = require(('amazeui-react'));
 var DateTimeInput = DataPick.DateTimeInput;
 
 module.exports = React.createClass({

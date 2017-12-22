@@ -4,7 +4,7 @@ var Reload = require('../../components/common/Reload');
 var UserOrderHandle = require('../../handle/usercenter/UserOrder');
 var Loading = require('../../components/common/Loading');
 
-var DataPick = require('date-pick');
+var DataPick = require(('amazeui-react'));
 var DateTimeInput = DataPick.DateTimeInput;
 
 module.exports = React.createClass({
