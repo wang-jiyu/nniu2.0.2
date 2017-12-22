@@ -30,16 +30,8 @@ module.exports = React.createClass({
     submit: function () {
         var product = this.props.product;
         if (!product.discount_price) {
-            var param = {
-                product_id: product._id,
-                paymethod: product.paymethod,
-                num:product.cycle,
-                timeType:product.timeType,
-                discountDetails:product.discountDetails,
-                isExclusive:parseInt(Url.getParam('is_exclusive')),
-                serviceType:parseInt(Url.getParam('serviceType'))
-            };
-            UserOrderHandle.createMobileOrder(param, function(result) {
+            var param = {product_id: product._id, paymethod: product.paymethod};
+            UserOrderHandle.createOrder(param, function(result) {
                 if (result.code == 42903) {
                     this.props.onChange(5);
                 } else {

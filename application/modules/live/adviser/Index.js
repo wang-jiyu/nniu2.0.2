@@ -1,6 +1,7 @@
 ﻿var LiveModule = require('./live/Index');
 var Jewel = require('./jewel/List');
 var Ask = require('./ask/Index');
+var Check = require('./check/Index');
 var Opinions = require('./opinions/Index');
 var View = require('./View');
 var MultipleLive = require('./multiple/Index');
@@ -40,6 +41,10 @@ module.exports = React.createClass({
                 return <Ask param={this.state.param}/>;
             case 'opinions':
                 return <Opinions param={this.state.param}/>;
+            case 'check':
+                return <Check param={this.state.param}/>;
+            case 'Vipcheck':
+                return <Check key="checkVip" param={this.state.param} isVip={true}/>;
         }
     },
     switchMenu: function (pointer) {
@@ -107,8 +112,12 @@ module.exports = React.createClass({
             if (!LiveHandle.isRoomOwner()) {
                 if (Config.CACHE_DATA.ROOM.purchase_status && Config.CACHE_DATA.ROOM.purchase_status.isBuy) {
                     arr.splice(0, 1);
+                    arr.pop();
+                    arr.pop();
                 } else {
                     arr.splice(1, 1);
+                    arr.pop();
+                    arr.pop();
                 }
             }
 
@@ -224,6 +233,14 @@ module.exports = React.createClass({
         }, {
             text: '问答',
             pointer: 'ask',
+            event: this.switchMenu
+        }, {
+            text: '审核',
+            pointer: 'check',
+            event: this.switchMenu
+        },{
+            text: 'VIP审核',
+            pointer: 'Vipcheck',
             event: this.switchMenu
         }];
         return arr;

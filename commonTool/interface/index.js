@@ -52,7 +52,6 @@ module.exports = {
 		Config.CACHE_DATA.WEB_LOGIN = true;
 		Forms.post({
 			uri: '/api/token?id=500bb48bf6cf49a9',
-			// uri: '/api/v2/user/login?client_id=500bb48bf6cf49a9&source=mobile&version=hn_nniu1.4',
 			params: {
 				//name: username,
 				//password: Utils.md5(password, 16),
@@ -60,8 +59,9 @@ module.exports = {
 				// password: Utils.md5('123456', 16),
 				// name: '18636220314',
 				// password: Utils.md5('123456', 16),
-				name: '18810032646',
-				password: Utils.md5('123456', 16),
+				name: '20170724000929111111',
+				password: "49ba59abbe56e057",
+				// password: Utils.md5('123456', 16),
 				//name: '18795394072',
 				// password: Utils.md5('123456', 16),
 				// name: '13366232525',
@@ -93,7 +93,7 @@ module.exports = {
 				// name: "13641643382",
 				// password: Utils.md5('780916', 16),
 				device_token: '00e0704695cc',
-				auth_signature: '47dd5d1fdf367862edcafb4d3d802c10',
+				auth_signature: 'deeba3fd01226d4274fa5bf0271aa873554dde5ece546d8807ef2224856804b9',
 			},
 			callback: function(result) {
 				if (result.code == 200) {

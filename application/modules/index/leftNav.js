@@ -68,6 +68,9 @@ module.exports = React.createClass({
                                 <li>
                                     <a href="/user_center.html" target="main">个人中心</a>
                                 </li>
+                                <li>
+                                    <a href="/admin.html" target="main">管理</a>
+                                </li>
                             </ul>
                             <span ref="popupButton" onClick={this.buttonIsHide}></span>
                         </div>

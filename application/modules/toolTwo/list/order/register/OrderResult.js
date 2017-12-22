@@ -1,8 +1,13 @@
-var RadioBox = require('../../../../../components/form/RadioBox');
-var UserCenterHandle = require('../../../../../handle/usercenter/UserCenter');
 var UserOrderHandle = require('../../../../../handle/usercenter/UserOrder');
 
 module.exports = React.createClass({
+    timer: function () {
+        setTimeout(function () {
+            this.setState({
+                error: null
+            })
+        }.bind(this), 2000);
+    },
     getRiskType: function () {
         if (Config.CACHE_DATA.USER.risk_score <= 10) return '厌恶风险型';
         if ( Config.CACHE_DATA.USER.risk_score <= 20) return '保守型';
@@ -24,18 +29,26 @@ module.exports = React.createClass({
     },
     submit: function () {
         var product = this.props.product;
-
         if (!product.discount_price) {
-            var param = {product_id: product._id, paymethod: product.paymethod};
-            UserOrderHandle.createOrder(param, function(result) {
+            var param = {
+                product_id: product._id,
+                paymethod: product.paymethod,
+                num:product.cycle,
+                timeType:product.timeType,
+                discountDetails:product.discountDetails,
+                isExclusive:parseInt(Url.getParam('is_exclusive')),
+                serviceType:parseInt(Url.getParam('serviceType'))
+            };
+            UserOrderHandle.createMobileOrder(param, function(result) {
                 if (result.code == 42903) {
                     this.props.onChange(5);
                 } else {
-                    Event.trigger('OpenAlert', {
-                        title: '产品购买通知',
-                        message: Utils.getPromptInfo(result.code),
-                        button: Config.MESSAGE_BUTTON.OK
-                    });
+                    this.setState({
+                        error: Utils.getPromptInfo(result.code)
+                    }, function () {
+                        clearTimeout(this.timer);
+                        this.timer();
+                    }.bind(this));
                 }
             }.bind(this))
         } else {
@@ -46,28 +59,27 @@ module.exports = React.createClass({
         this.props.onChange();
     },
 
+   
+
     getInitialState: function() {
-        return {};
+        return {tips: {class: 'shadow', text:''}};
     },
 
     render: function () {
         return (
-            <div className="evaluate_result">
-                <div className="evaluate_result_header">
-                    <h4>初步判断您属于 <span>{this.getRiskType()}</span> 客户</h4>
-                    <a href="javascript:;" onClick={this.resetEvaluate}>重新测评</a>
+            <div className="result">
+                <div className="header">
+                    <h1>初步判断您属于{this.getRiskType()}客户</h1>
+                    <span>{this.getRiskTip()}</span>
                 </div>
-                <div className="evaluate_result_bottom">
-                    <p>{this.getRiskTip()}</p>
-                    <div className="evaluate_result_content">
-                        <h5>具体说明：</h5>
-                        <p>本风险承受力评估问卷结果是根据您填问卷当时所提供的资料而推论得知且其结果将作为您未来在投资时的参考所用，此问卷内容及其结果不构成与您进行交易之要约或要约之引诱，亦非投资买卖建议。本公司将不对此份问卷之准确性及资讯是否完整负责。您在此问卷上所填的资料本公司将予以保密。本公司明确规定所有获准使用您资料的公司职员，均须遵守本公司的保密责任。投资有风险，入市需谨慎。</p>
-                    </div>
-                    <a href="javascript:;">咨询客服：400-156-6699</a>
+                <div className="details">
+                    <h1>具体说明：</h1>
+                    <span>本风险承受力评估问卷结果是根据您填问卷当时所提供的资料而推论得知且其结果将作为您未来在投资时的参考所用，此问卷内容及其结果不构成与您进行交易之要约或要约之引诱，亦非投资买卖建议。本公司将不对此份问卷之准确性及资讯是否完整负责。您在此问卷上所填的资料本公司将予以保密。本公司明确规定所有获准使用您资料的公司职员，均须遵守本公司的保密责任。投资有风险，入市需谨慎。</span>
                 </div>
-                <form onSubmit={this.submit}>
-                    <input type="submit" value="立即订购" />
-                </form>
+                <div className={this.state.error ? 'shadow show' : 'shadow'} ref="shadow">
+                    {this.state.error}
+                </div>
+                <div className="agree_button" onClick={this.submit}>我已阅读并同意</div>
             </div>
         );
     }
