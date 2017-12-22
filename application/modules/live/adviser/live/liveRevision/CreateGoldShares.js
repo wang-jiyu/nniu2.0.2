@@ -26,14 +26,15 @@ module.exports = React.createClass({
         if (this.isEdit) {
             delete obj.reason;
             console.log(this.reasonStatus);
-            if(this.props.info.stock_name == obj.stock_name && this.props.info.stock_code == obj.stock_code && this.props.info.min_price == obj.min_price && this.props.info.max_price == obj.max_price && this.props.info.target_price == obj.target_price && this.props.info.stop_price == obj.stop_price && this.props.info.capital_quantity == obj.capital_quantity) {
+            if(!this.reasonStatus&this.props.info.stock_name == obj.stock_name && this.props.info.stock_code == obj.stock_code && this.props.info.min_price == obj.min_price && this.props.info.max_price == obj.max_price && this.props.info.target_price == obj.target_price && this.props.info.stop_price == obj.stop_price && this.props.info.capital_quantity == obj.capital_quantity) {
                 this.close();
             }else{
                 LiveHandle.goldStockEdit(this.props.info._id, obj, function (result) {
                     if (result.code == 200) {
                         this.close();
                     } else {
-                        Event.trigger('ServerTips', result.message);
+                        //Event.trigger('ServerTips', result.message);
+                        Event.trigger('ServerTips', "请输入正确的内容");
                     }
                     this.setState({ loading: false });
                 }.bind(this));
@@ -43,7 +44,8 @@ module.exports = React.createClass({
                 if (result.code == 200) {
                     this.close();
                 } else {
-                    Event.trigger('ServerTips', result.message);
+                    //Event.trigger('ServerTips', result.message);
+                    Event.trigger('ServerTips', "请输入正确的内容");
                 }
                 this.setState({ loading: false });
             }.bind(this));
@@ -120,8 +122,8 @@ module.exports = React.createClass({
         this.reasonId = "";
     },
     onCloseAdd: function() {
-        this.reasonStatus = "";
         $(this.refs.addReasonMask).css('display','none');
+        this.reasonStatus = "";
     },
     saveReason: function() {
         if(this.reasonStatus == "add") {
@@ -132,17 +134,17 @@ module.exports = React.createClass({
             if(reasonObj.reason == "") {
                 Event.trigger('ServerTips',"推荐理由不能为空");
             }else{
-                this.reasonStatus = "edit";
                 LiveHandle.saveOneReason(reasonObj, function(result) {
                     if(result.code == 200) {
                         this.sendReasonInter(this.props.info._id);
-                        this.onCloseAdd();
+                        $(this.refs.addReasonMask).css('display','none');
                     }else{
                         Event.trigger('ServerTips',result.message);
                     }
                 }.bind(this));
             }
         }else{
+            this.reasonStatus = "edit";
             var editObj = {
                 "golden_stock_id":this.props.info._id,
                 "reason_guid":this.reasonId,
@@ -151,7 +153,7 @@ module.exports = React.createClass({
             LiveHandle.editReason(editObj, function(result) {
                 if(result.code == 200) {
                     this.sendReasonInter(this.props.info._id);
-                    this.onCloseAdd();
+                    $(this.refs.addReasonMask).css('display','none');
                 }else{
                     Event.trigger('ServerTips',result.message);
                 }
