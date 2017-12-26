@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="Renderer" content="webkit" />
+<meta name="Viewport" content="width=1280" />
+<meta name="Robots" content="none" />
+<title>haina.nniu</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/taro.base.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/taro.component.css" />
+<link rel="stylesheet" type="text/css" href="../assets/css/view.signup.css" />
+</head>
+<body>
+	    <div class="signup_box">
+			<form>
+				<input type="text" name="mobile" placeholder="输入您的名字" data-type="mobile" data-required="true" />
+				<input type="password" placeholder="输入登录密码，至少6个字符" />
+				<div class="code_box">
+					<input type="text" class="phone" placeholder="输入手机号码" />
+					<div class="code">
+						<input type="text" name="code" placeholder="输入图片验证码" data-required="true" />
+						<img src="" />
+					</div>
+				</div>
+				<p class="prompt">输入的图片验证码有误</p>
+				<div class="remark">点击下一步表示您已阅读并同意《<a href="javascript:;">海纳智投使用条款</a>》</div>
+				<input type="submit" value="下一步" />
+			</form>
+		</div>
+
+
+	    <div class="signup_box">
+			<form>
+				<div class="number">13849011364</div>
+				<div class="sms_remark resend">请查收手机上收到的短信验证码，60秒后方可重发短信</div>
+				<div class="sms_remark resend">请查收手机上收到的短信验证码，<a href="javascript:;">重发短信</a></div>
+				<input type="text" name="code" placeholder="输入验证码" data-required="true" />
+				<p class="prompt_code">验证码有误</p>
+				<input type="submit" value="下一步" />				
+			</form>
+		</div>
+
+
+	    <div class="signup_box">
+	    	<div class="success">
+	    		<i></i>
+	    		<label>账户注册成功</label>
+	    		<p>5秒后，系统自动登录</p>
+	    	</div>
+		</div>
+
+</body>
+</html>

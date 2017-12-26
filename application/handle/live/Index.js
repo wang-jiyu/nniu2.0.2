@@ -190,7 +190,49 @@ module.exports = {
 		});
 	},
 
-
+	//修改金股状态
+	goldStockStatusChange: function(id, param, callback) {
+        Forms.put({
+            api: Config.SITE_URL.ADVISOR,
+            uri: '/api/course/golden/stock/' + id + '/update',
+            params: param,
+            callback: callback
+        });
+	},
+	//理由列表
+	getStockReasonList: function(id, callback) {
+		Forms.get({
+			api: Config.SITE_URL.ADVISOR,
+			uri: '/api/course/goldenstock/reason/list?golden_stock_guid=' + id,
+			callback: callback
+		})
+	},
+	//保存理由
+	saveOneReason: function(param, callback) {
+		Forms.post({
+			api: Config.SITE_URL.ADVISOR,
+			uri: '/api/course/goldenstock/reason/add',
+			params:param,
+			callback:callback
+		})
+	},
+	//删除理由
+	deleteOneReason: function(id, callback) {
+        Forms.delete({
+            api: Config.SITE_URL.ADVISOR,
+            uri: '/api/course/goldenstock/reason/delete/' + id,
+            callback:callback
+        })
+	},
+	//编辑理由
+	editReason: function(param,callback) {
+		Forms.put({
+            api: Config.SITE_URL.ADVISOR,
+            uri: '/api/course/goldenstock/reason/update',
+            params:param,
+            callback:callback
+		})
+	},
 	//创建一个新研报
 	createReport: function (param, callback) {
 		Forms.post({
@@ -265,24 +307,24 @@ module.exports = {
 		});
 	},
 
-    //审核消息列表
-    getCheckMessageList: function(roomId, refId, limit, page, checkType, callback) {
+	//审核消息列表
+	getCheckMessageList: function(roomId, refId, limit, page, checkType, callback) {
         Forms.get({
             api: Config.SITE_URL.ADVISOR,
             uri: '/api/weblive/check/messages/' + roomId + "?ref_id=" + refId + "&limit=" + limit + "&page=" + page + "&check_type=" + checkType,
             callback: callback
         });
-    },
+	},
 
-    //处理审核消息
-    handleCheckMessage: function(params,callback) {
-        Forms.post({
+	//处理审核消息
+	handleCheckMessage: function(params,callback) {
+		Forms.post({
             api:Config.SITE_URL.ADVISOR,
-            uri:'/api/weblive/check/message/handle',
-            params:params,
-            callback:callback
+			uri:'/api/weblive/check/message/handle',
+			params:params,
+			callback:callback
         });
-    },
+	},
 
 	//消息列表
 	getMessageListII: function (roomId, params, callback) {

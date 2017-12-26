@@ -12,8 +12,8 @@
 		}
 		e.target.data = Forms.serialize(objControl);
 	}
-    // require('./Socket');
-    // console.log("is fun",window.pushMessage);
+    require('./Socket');
+    //console.log("is fun",window.pushMessage);
 	// #需要删除
 	if (typeof(window.pushMessage) != 'function') {
 		console.log("是否执行！!")
