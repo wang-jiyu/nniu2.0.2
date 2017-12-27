@@ -314,10 +314,10 @@ module.exports = React.createClass({
     },
     componentDidMount: function () {
         if (this.props.history) return null;
-        Interface.pushMessage('Subscribe', [{
-            channel: Config.CACHE_DATA.ROOM.channel_id,
-            type: Config.CHANNEL_TYPE.CHANNEL
-        }]);
+        // Interface.pushMessage('Subscribe', [{
+        //     channel: Config.CACHE_DATA.ROOM.channel_id,
+        //     type: Config.CHANNEL_TYPE.CHANNEL
+        // }]);
         var isVip = this.props.isVip;
         this.liveEvent = this.appendEvent.bind(this, this.refs.liveChat);
         // this.talkEvent = this.appendEvent.bind(this, this.refs.talkChat);
