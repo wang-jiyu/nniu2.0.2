@@ -5,41 +5,23 @@ module.exports = {
 		BANNED_LIST: {}, //直播禁言列表
 		GROUP_LIST: [], //会员组
 		ROOM: {}, //房间信息
-		USER: {}, //用户信息
+		USER: {} //用户信息
 	},
 	REFRESH_TOKEN: Url.getParam('refresh_token'),
 	FOCUSIN: false,
 
-	/*SITE_URL: {
-		API: 'http://mapi.0606.com.cn',
-		CMS: 'http://cms.0606.com.cn',
-		ADVISOR: 'http://advisor.0606.com.cn',
-		ATTACHMENT: 'http://box.0606.com.cn',
-		DEV_STRATEGY: 'http://116.62.182.134:8085'
-	},
-	PUSHER: {
-		SAFETY_KEY: '9104cfcb1e8e4d7b',
-		HOST: 'ws://pusher.0606.com.cn',
-		PORT: 80,
-	},*/
-
 	SITE_URL: {
-		API: 'http://mapi-dev.0606.com.cn:5000',
-		CMS: 'http://cms-dev.0606.com.cn',
-		ADVISOR: 'http://advisor-dev.0606.com.cn:5510',
-		ATTACHMENT: 'http://box-dev.0606.com.cn:5650',
-		DEV_STRATEGY: 'http://dev.0606.com.cn' //测试服务器
-			// DEV_STRATEGY: 'http://advisor-dev.0606.com.cn:8085'  //本地使用
-			// DEV_STRATEGY: 'http://116.62.182.134:8085' //原接口
+        API: 'https://mapi2.0606.com.cn',
+        CMS: 'https://cms2.0606.com.cn',
+        ADVISOR: 'https://advisor2.0606.com.cn',
+        ATTACHMENT: 'https://box2.0606.com.cn',
+		DEV_STRATEGY: 'https://116.62.182.134:8085'
 	},
-
 	PUSHER: {
 		SAFETY_KEY: '9104cfcb1e8e4d7b',
-		HOST: 'ws://push-dev.0606.com.cn',
-		PORT: 3380,
+		HOST: 'wss://pusher2.0606.com.cn',
+		PORT: 443,
 	},
-
-
 	CHANNEL: {
 		CHANNEL: {
 			PREV: 'private-channel-',
